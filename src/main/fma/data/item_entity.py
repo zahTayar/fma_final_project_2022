@@ -1,4 +1,4 @@
-class item_boundary:
+class item_entity:
 
     def __init__(self, item_id, type, address, active, date_of_upload, item_attributes):
         self.item_id = item_id
