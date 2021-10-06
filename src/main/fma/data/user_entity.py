@@ -1,4 +1,3 @@
-
 class user_entity:
 
     def __init__(self, email, role, username, avatar):
