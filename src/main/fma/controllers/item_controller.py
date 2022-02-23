@@ -2,6 +2,7 @@ from flask import request
 import json
 from flask import Blueprint
 from src.main.fma.logic.item_service import item_service
+from src.main.fma.boundaries.item_boundary import item_boundary
 
 app_file2 = Blueprint('app_file2', __name__)
 item_service = item_service()
@@ -19,9 +20,17 @@ def get_specific_item(item_id) -> json:
 
 @app_file2.route('/fma/items/store', methods=["POST"])
 def store_item() -> json:
-    return item_service.create_item(request.get_json())
+    rv = request.get_json()
+    item = item_boundary(
+        '', rv['type'], rv['address'], rv['active'], '', rv['item_attributes']
+    )
+    return item_service.create_item(item)
 
 
 @app_file2.route('/fma/items/<item_id>', methods=["PUT"])
 def update_item(item_id) -> json:
-    return item_service.update_item(item_id, request.get_json())
+    rv = request.get_json()
+    item = item_boundary(
+        '', rv['type'], rv['address'], rv['active'], '', rv['item_attributes']
+    )
+    return item_service.update_item(item_id, item)

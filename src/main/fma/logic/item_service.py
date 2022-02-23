@@ -1,4 +1,6 @@
 import pymongo.errors as mongodb_errors
+from bson import ObjectId
+import json
 from src.main.fma.controllers import items_db
 from src.main.fma.boundaries.item_boundary import item_boundary
 from src.main.fma.helpers.checker_authorization import checker_authorization
@@ -24,7 +26,9 @@ class item_service:
         # check input
         entity = self.convert_boundary_to_entity(boundary)
         entity.set_item_id(str(uuid.uuid4()))
-        return self.convert_entity_to_boundary(items_db.insert_one(entity))
+        items_db.insert(entity.__dict__)
+        return self.convert_entity_to_boundary(entity).__dict__
+
 
     def convert_entity_to_boundary(self, entity):
         boundary = item_boundary()
@@ -42,16 +46,19 @@ class item_service:
         entity.set_active(boundary.get_active())
         entity.set_address(boundary.get_address())
         entity.set_item_attributes(boundary.get_item_attributes())
-        entity.set_date_of_upload(datetime.now())
+        entity.set_date_of_upload(datetime.now().strftime("%m/%d/%Y, %H:%M:%S"))
         return entity
 
     def update_item(self, item_id, boundary):
         my_query = {"item_id": item_id}
-        new_values = {"$set": self.convert_boundary_to_entity(boundary)}
+        nv = self.convert_boundary_to_entity(boundary)
+        nv.set_item_id(item_id)
+        new_values = {"$set": nv.__dict__}
         try:
             items_db.update_one(my_query, new_values)
         except mongodb_errors:
             print(str(mongodb_errors))
+        return boundary.__dict__
 
     def delete_all_items(self, user_email):
         # check auth of user_email
