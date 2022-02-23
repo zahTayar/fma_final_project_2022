@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time
 import logging
+import os
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 
@@ -20,9 +21,11 @@ class yad2_searcher:
         self.driver = webdriver.Chrome(PATH, chrome_options=chrome_options)
         self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         self.apartments = []
-        logging.basicConfig(level=logging.INFO, filename='yad2.log', filemode="w")
+        log_dir = os.path.join(os.path.normpath(os.getcwd() + os.sep + os.pardir), 'logs')
+        log_fname = os.path.join(log_dir, 'yad2.log')
+        logging.basicConfig(level=logging.INFO, filename=log_fname, filemode="w")
         logging.info('Initial driver done')
-        logging.info('################################')
+        logging.info('###############################')
 
     def search_in_yad2(self):
         driver = self.driver
