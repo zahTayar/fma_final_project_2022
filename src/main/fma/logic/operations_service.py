@@ -3,6 +3,7 @@ from src.main.fma.controllers import items_db
 
 
 from src.main.fma.boundaries import operation_boundary
+from src.main.fma.helpers import checker_authorization
 from src.main.fma.logic.operations import search
 from src.main.fma.logic.operations import update_db
 from src.main.fma.logic.operations import send_alert
@@ -41,7 +42,7 @@ class operation_service :
         # }
 
 
-        email = operation_boundary.get_invoked_by();
+        email = operation_boundary.get_invoked_by(self);
 
         # // check if user is present and his
         # roll = "PLAYER"
@@ -56,11 +57,16 @@ class operation_service :
         return None
 
     def get_all_operations(self,admin_email):
-        operations_db.find()
+        if checker_authorization:
+            operations_db.find()
+
 
         return None
     def delete_all_operation(self,admin_email):
-        pass
+        if checker_authorization :
+            operations_db.delete_many({})
+
+
 
 
 
