@@ -23,7 +23,7 @@ class operation_service :
         self.update_db = update_db()
         self.send_alert = send_alert()
         self.display_relevent_prop = display_relevent_prop()
-        self.calculate_incrase_in_value = calculate_incrase_in_value()
+        self.calculate_increase_in_value = calculate_increase_in_value()
         self.checker_authorization =checker_authorization()
 
 
