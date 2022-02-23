@@ -18,12 +18,15 @@ from src.main.fma.logic.operations import calculate_increase_in_value
 		# List <operationBoundary> getAllOperations (adminEmail)
 		# void deleteAllOperations (adminEmail)
 class operation_service :
-    def __init__(self, search,update_db,send_alert,display_relevent_prop,calculate_incrase_in_value):
-        self.search = search
-        self.update_db = update_db
-        self.send_alert = send_alert
-        self.display_relevent_prop = display_relevent_prop
-        self.calculate_incrase_in_value = calculate_incrase_in_value
+    def __init__(self):
+        self.search = search()
+        self.update_db = update_db()
+        self.send_alert = send_alert()
+        self.display_relevent_prop = display_relevent_prop()
+        self.calculate_incrase_in_value = calculate_incrase_in_value()
+        self.checker_authorization =checker_authorization()
+
+
 
     def invoke_operation (self,operation_boundary):
         # // check
@@ -63,8 +66,9 @@ class operation_service :
 
         return None
     def delete_all_operation(self,admin_email):
-        if checker_authorization :
+        if not checker_authorization(admin_email) :
             operations_db.delete_many({})
+
 
 
 
