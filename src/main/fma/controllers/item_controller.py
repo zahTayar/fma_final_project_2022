@@ -1,6 +1,6 @@
 from flask import request
 import json
-from flask import Blueprint, render_template, session, abort
+from flask import Blueprint
 from src.main.fma.logic.item_service import item_service
 
 app_file2 = Blueprint('app_file2', __name__)
