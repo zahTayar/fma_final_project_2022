@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f6e0c98f-d3c5-471a-8408-fc70376e67ba" name="Default Changelist" comment="open new project with RestAPI flask framework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/fma/boundaries/user_boundary.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/boundaries/user_boundary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/fma/data/item_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/data/item_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/fma/data/user_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/data/user_entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/fma/helpers/checker_autorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/helpers/checker_autorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/helpers/checker_autorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/helpers/checker_authorization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/fma/logic/user_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/logic/user_services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
