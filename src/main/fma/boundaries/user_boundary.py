@@ -1,10 +1,9 @@
 class user_boundary():
-    def __init__(self, email, username, avatar, role, password):
+    def __init__(self, email="", username="", avatar="", role=""):
         self.email = email
         self.username = username
         self.avatar = avatar
         self.role = role
-        self.password = password
 
     def get_email(self):
         return self.email
@@ -26,8 +25,3 @@ class user_boundary():
 
     def set_avatar(self, avatar):
         self.avatar = avatar
-
-    # for new password only
-    def set_new_password(self, password):
-        # doing some hash for password
-        self.password = password
