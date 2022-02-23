@@ -1,5 +1,5 @@
 class new_user_details:
-    def __init__(self, email, username, avatar, role, password):
+    def __init__(self, email="", username="", avatar="", role="", password=""):
         self.email = email
         self.username = username
         self.avatar = avatar

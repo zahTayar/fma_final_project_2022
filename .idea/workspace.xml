@@ -21,8 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f6e0c98f-d3c5-471a-8408-fc70376e67ba" name="Default Changelist" comment="open new project with RestAPI flask framework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/fma/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/fma/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/controllers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/boundaries/new_user_details.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/boundaries/new_user_details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/boundaries/user_boundary.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/boundaries/user_boundary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/controllers/user_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/controllers/user_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/data/user_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/data/user_entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/helpers/checker_authorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/helpers/checker_authorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/logic/user_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/logic/user_services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -182,36 +187,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="519" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1645608914059" />
-    <state width="1515" height="345" key="GridCell.Tab.0.bottom" timestamp="1645619281765">
+    <state width="1515" height="271" key="GridCell.Tab.0.bottom" timestamp="1645632443621">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="345" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645619281765" />
-    <state width="1515" height="345" key="GridCell.Tab.0.center" timestamp="1645619281765">
+    <state width="1515" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645632443621" />
+    <state width="1515" height="271" key="GridCell.Tab.0.center" timestamp="1645632443621">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="345" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645619281765" />
-    <state width="1515" height="345" key="GridCell.Tab.0.left" timestamp="1645619281765">
+    <state width="1515" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645632443621" />
+    <state width="1515" height="271" key="GridCell.Tab.0.left" timestamp="1645632443620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="345" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645619281765" />
-    <state width="1515" height="345" key="GridCell.Tab.0.right" timestamp="1645619281765">
+    <state width="1515" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645632443620" />
+    <state width="1515" height="271" key="GridCell.Tab.0.right" timestamp="1645632443621">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="345" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645619281765" />
+    <state width="1515" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645632443621" />
     <state x="372" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1645613699480">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="372" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1645613699480" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main/fma/controllers/user_controller.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
