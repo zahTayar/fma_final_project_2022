@@ -6,19 +6,22 @@ class checker_authorization:
     def __init__(self):
         pass
 
-    def check_email_valid(self, email_string):
-        if not email_string.contains('@'):
+    def check_user_name_valid(self, username):
+        if len(username) == 0:
             return False
-        else:
-            return True
+        return True
+
+    def check_email_valid(self, email_string):
+        if '@' not in email_string:
+            return False
+        return True
 
     def check_valid_user(self, id_string):
         query = {"user_id": id_string}
         entity = users_db.find(query)
         if not entity:
             return False
-        else:
-            return True
+        return True
 
     def check_admin_user(self, id_string):
         query = {"user_id": id_string}

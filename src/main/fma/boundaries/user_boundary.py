@@ -8,6 +8,9 @@ class user_boundary():
     def get_email(self):
         return self.email
 
+    def set_email(self,email):
+        self.email = email
+
     def get_role(self):
         return self.role
 
