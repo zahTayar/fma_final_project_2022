@@ -1,6 +1,3 @@
-import uuid
-
-
 class operation_boundary:
 
     def __init__(self, operation_id='', type='', created_timestamp='', invoked_by='', operation_attributes=''):

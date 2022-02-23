@@ -1,12 +1,12 @@
 from src.main.fma.controllers import operations_db
-from src.main.fma.boundaries import operation_boundary
-from src.main.fma.helpers import checker_authorization
-from src.main.fma.logic.operations import search
-from src.main.fma.logic.operations import update_db
-from src.main.fma.logic.operations import send_alert
-from src.main.fma.logic.operations import display_relevent_prop
-from src.main.fma.logic.operations import calculate_increase_in_value
-from src.main.fma.data import operation_entity
+from src.main.fma.boundaries.operation_boundary import operation_boundary
+from src.main.fma.helpers.checker_authorization import checker_authorization
+from src.main.fma.logic.operations.search import search
+from src.main.fma.logic.operations.update_db import update_db
+from src.main.fma.logic.operations.send_alert import send_alert
+from src.main.fma.logic.operations.display_relevent_prop import display_relevent_prop
+from src.main.fma.logic.operations.calculate_increase_in_value import calculate_increase_in_value
+from src.main.fma.data.operation_entity import operation_entity
 import pymongo.errors as mongodb_errors
 from datetime import datetime
 import uuid
@@ -27,30 +27,12 @@ class operation_service:
         self.checker_authorization = checker_authorization()
 
     def invoke_operation(self, operation_boundary):
-        # // check
+        self.search.search()
+        self.update_db.update_db()
+        self.send_alert.send_alert()
+        self.display_relevent_prop.display_relevent_prop()
+        self.calculate_increase_in_value.calculate_increase_in_value()
 
-        # input
-        # if (!this.checker.checkOperationType(operation.getType())) {
-        # throw new RuntimeException("Type can not be null or empty String");
-        # }
-        #
-        # if (!this.checker.checkOperationItem(operation.getItem())) {
-        # throw new RuntimeException("Item can not be null or empty String");
-        # }
-        #
-        # if (!this.checker.checkOperationInvokeBy(operation.getInvokedBy())) {
-        # throw new RuntimeException("User Id can not be null or empty String");
-        # }
-
-
-
-        # // check if user is present and his
-        # roll = "PLAYER"
-        # if (!checkerAutho.CheckPlayerUser(userSpace+'%'+email)) {
-        # throw new RuntimeException("User not authorized to do this action");
-        # }
-
-        return None
 
     def invoke_async_operation(self, operation_boundary):
         return None
@@ -58,11 +40,21 @@ class operation_service:
     def convert_boundary_to_entity(self, boundary):
         entity = operation_entity()
         entity.set_type(boundary.get_type())
-        entity.set_active(boundary.get_active())
-        entity.set_address(boundary.get_address())
-        entity.set_item_attributes(boundary.get_item_attributes())
-        entity.set_date_of_upload(datetime.now())
+        entity.set_operation_attributes(boundary.get_operation_attributes())
+        entity.set_invoked_by(boundary.get_invoked_by())
+        entity.set_created_timestamp(datetime.now().strftime("%m/%d/%Y, %H:%M:%S"))
         return entity
+
+    def convert_entity_to_boundary(self, entity):
+        boundary = operation_boundary()
+        boundary.set_operation_id(entity.get_operation_id())
+        boundary.set_type(entity.set_type())
+        boundary.set_operation_attributes(entity.get_operation_attributes())
+        boundary.set_invoked_by(entity.get_invoked_by())
+        boundary.set_created_timestamp(entity.get_created_timestamp())
+        return  boundary
+
+
 
     def get_all_operations(self, admin_email):
         # check auth of admin_email

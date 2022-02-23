@@ -11,6 +11,7 @@ def invoked_operation() -> json:
     response = operations_db.insert({
         "_id": "operation_id",
         "type": "type",
+        "invoked_by": "invoked_by",
         "created_timestamp": "created_timestamp",
         "operation_attributes": "operation_attributes"
     })
