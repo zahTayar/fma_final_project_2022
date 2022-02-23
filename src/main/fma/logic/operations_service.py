@@ -5,7 +5,7 @@ from src.main.fma.logic.operations.search import search
 from src.main.fma.logic.operations.update_db import update_db
 from src.main.fma.logic.operations.send_alert import send_alert
 from src.main.fma.logic.operations.display_relevent_prop import display_relevent_prop
-from src.main.fma.logic.operations.calculate_increase_in_value import calculate_increase_in_value
+from src.main.fma.logic.operations.calculate_increase_in_value import calculate_incrase_in_value
 from src.main.fma.data.operation_entity import operation_entity
 import pymongo.errors as mongodb_errors
 from datetime import datetime

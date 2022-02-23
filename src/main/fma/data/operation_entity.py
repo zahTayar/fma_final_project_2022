@@ -1,4 +1,4 @@
-class operation_boundary:
+class operation_entity:
 
     def __init__(self, operation_id='', type='', created_timestamp='', invoked_by='', operation_attributes=''):
         self.operation_id = operation_id
