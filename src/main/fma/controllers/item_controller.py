@@ -22,7 +22,7 @@ def get_specific_item(item_id) -> json:
 def store_item() -> json:
     rv = request.get_json()
     item = item_boundary(
-        '', rv['type'], rv['address'], rv['active'], '', rv['item_attributes']
+        rv['item_id'], rv['type'], rv['address'], rv['active'], '', rv['item_attributes'], rv['created_by']
     )
     return item_service.create_item(item)
 
@@ -31,6 +31,6 @@ def store_item() -> json:
 def update_item(item_id) -> json:
     rv = request.get_json()
     item = item_boundary(
-        '', rv['type'], rv['address'], rv['active'], '', rv['item_attributes']
+        rv['item_id'], rv['type'], rv['address'], rv['active'], '', rv['item_attributes'], rv['created_by']
     )
     return item_service.update_item(item_id, item)

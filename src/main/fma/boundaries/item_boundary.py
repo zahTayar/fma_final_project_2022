@@ -1,12 +1,19 @@
 class item_boundary:
 
-    def __init__(self, item_id='', type='', address='', active='', date_of_upload='', item_attributes=''):
+    def __init__(self, item_id='', type='', address='', active='', date_of_upload='', item_attributes='', created_by=''):
         self.item_id = item_id
         self.type = type
         self.address = address
         self.active = active
         self.date_of_upload = date_of_upload
         self.item_attributes = item_attributes
+        self.created_by = created_by
+
+    def get_created_by(self):
+        return self.created_by
+
+    def set_created_by(self, created_by):
+        self.created_by = created_by
 
     def get_item_id(self):
         return self.item_id
