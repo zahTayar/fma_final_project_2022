@@ -3,6 +3,7 @@ from src.main.fma.controllers import items_db
 
 
 from src.main.fma.boundaries import operation_boundary
+from src.main.fma.helpers import checker_authorization
 from src.main.fma.logic.operations import search
 from src.main.fma.logic.operations import update_db
 from src.main.fma.logic.operations import send_alert
@@ -17,12 +18,15 @@ from src.main.fma.logic.operations import calculate_increase_in_value
 		# List <operationBoundary> getAllOperations (adminEmail)
 		# void deleteAllOperations (adminEmail)
 class operation_service :
-    def __init__(self, search,update_db,send_alert,display_relevent_prop,calculate_incrase_in_value):
-        self.search = search
-        self.update_db = update_db
-        self.send_alert = send_alert
-        self.display_relevent_prop = display_relevent_prop
-        self.calculate_incrase_in_value = calculate_incrase_in_value
+    def __init__(self):
+        self.search = search()
+        self.update_db = update_db()
+        self.send_alert = send_alert()
+        self.display_relevent_prop = display_relevent_prop()
+        self.calculate_increase_in_value = calculate_increase_in_value()
+        self.checker_authorization =checker_authorization()
+
+
 
     def invoke_operation (self,operation_boundary):
         # // check
@@ -41,7 +45,7 @@ class operation_service :
         # }
 
 
-        email = operation_boundary.get_invoked_by();
+        email = operation_boundary.get_invoked_by(self);
 
         # // check if user is present and his
         # roll = "PLAYER"
@@ -56,11 +60,17 @@ class operation_service :
         return None
 
     def get_all_operations(self,admin_email):
-        operations_db.find()
+        if checker_authorization:
+            operations_db.find()
+
 
         return None
     def delete_all_operation(self,admin_email):
-        pass
+        if not checker_authorization(admin_email) :
+            operations_db.delete_many({})
+
+
+
 
 
 

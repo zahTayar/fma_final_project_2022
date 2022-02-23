@@ -1,12 +1,16 @@
 import pymongo.errors as mongodb_errors
 from src.main.fma.controllers import items_db
 from src.main.fma.boundaries.item_boundary import item_boundary
+from src.main.fma.helpers.checker_authorization import checker_authorization
 from src.main.fma.data.item_entity import item_entity
 from datetime import datetime
 import uuid
 
 
 class item_service:
+
+    def __init__(self):
+        self.checker_authorization = checker_authorization()
 
     def get_specific_item(self, item_id):
         entity = {}
@@ -51,6 +55,8 @@ class item_service:
 
     def delete_all_items(self, user_email):
         # check auth of user_email
+        if not self.checker_authorization.check_admin_user(user_email):
+            raise RuntimeError("not autorizhed to act this operation")
         x = []
         try:
             x = items_db.delete_many({})
@@ -60,6 +66,8 @@ class item_service:
 
     def get_all_items(self, user_email):
         # check auth of user_email
+        if not self.checker_authorization.check_admin_user(user_email):
+            raise RuntimeError("not autorizhed to act this operation")
         items = []
         entities = []
         try:
