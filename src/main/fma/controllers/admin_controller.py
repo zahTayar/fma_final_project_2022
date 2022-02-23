@@ -3,6 +3,8 @@ from flask import request
 from flask import Blueprint, render_template, session, abort
 from src.main.fma.controllers import db
 app_file1 = Blueprint('app_file1', __name__)
+from src.main.fma.logic.item_service import item_service
+from src.main.fma.logic.user_services import user_service
 
 
 @app_file1.route('/fma/admin/users/<user_email>', methods=["GET"])
