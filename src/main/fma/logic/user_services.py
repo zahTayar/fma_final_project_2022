@@ -54,18 +54,20 @@ class user_service:
 
     def delete_all_users(self, admin_email):
         query = {"_id": admin_email}
-        admin_entity = users_db.find(query)
-        if not self.checker.check_valid_user(admin_entity.get_email()):
+        print(query)
+        admin_entity = users_db.find_one(query)
+        print(admin_entity['email'])
+        if not self.checker.check_valid_user(admin_entity['email']):
             raise RuntimeError("user not find")
         # check if the user is admin
-        if not self.checker.check_admin_user(admin_entity.get_email()):
+        if not self.checker.check_admin_user(admin_entity['email']):
             raise RuntimeError("not autorizhed to act this operation")
-        return users_db.delete_many({})
-
+        x = users_db.delete_many({})
+        return {"operation": "success","deleted":x.deleted_count}
     def get_all_users(self, admin_email):
         query = {"_id": admin_email}
-        entities=[]
-        items={}
+        entities = []
+        items = []
         admin_entity = users_db.find_one(query)
         if not self.checker.check_valid_user(admin_entity['email']):
             raise RuntimeError("user not find")
@@ -77,11 +79,13 @@ class user_service:
         except mongodb_errors:
             print(str(mongodb_errors))
         for entity in entities:
-            index=0
             new_entity = user_entity(entity['email'], entity['role'], entity['username'], entity['avatar'], entity['last_searched'],
                                  entity['password'])
-            items[index] = self.convert_to_boundary(new_entity)
-        return items
+            items.append(self.convert_to_boundary(new_entity))
+        my_dict = dict()
+        for index, value in enumerate(items):
+            my_dict[index] = value.__dict__
+        return my_dict
 
     def convert_to_entity(self, user_bou):
         user = user_entity()
