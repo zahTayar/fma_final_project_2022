@@ -17,17 +17,17 @@ class checker_authorization:
         return True
 
     def check_valid_user(self, id_string):
-        query = {"user_id": id_string}
+        query = {"_id": id_string}
         entity = users_db.find(query)
         if not entity:
             return False
         return True
 
     def check_admin_user(self, id_string):
-        query = {"user_id": id_string}
-        entity = users_db.find(query)
-        if not entity:
-            if entity.get_role() == Role.ADMIN:
+        query = {"_id": id_string}
+        entity = users_db.find_one(query)
+        if entity:
+            if entity['role'] != Role.ADMIN.name:
                 return False
             else:
                 return True
