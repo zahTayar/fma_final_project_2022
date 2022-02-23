@@ -1,10 +1,13 @@
 import pymongo.errors as mongodb_errors
+from bson import json_util
+
 from src.main.fma.controllers import items_db
 from src.main.fma.boundaries.item_boundary import item_boundary
 from src.main.fma.helpers.checker_authorization import checker_authorization
 from src.main.fma.data.item_entity import item_entity
 from datetime import datetime
 import uuid
+import json
 
 
 class item_service:
@@ -19,7 +22,7 @@ class item_service:
         except mongodb_errors:
             print(str(mongodb_errors))
         entity = item_entity(
-            rv['item_id'], rv['type'], rv['address'], rv['active'], '', rv['item_attributes'], rv['created_by']
+            rv['item_id'], rv['type'], rv['address'], rv['active'], rv['date_of_upload'], rv['item_attributes'], rv['created_by']
         )
         return self.convert_entity_to_boundary(entity).__dict__
 
@@ -52,9 +55,11 @@ class item_service:
 
     def update_item(self, item_id, boundary):
         my_query = {"item_id": item_id}
-        nv = self.convert_boundary_to_entity(boundary)
-        nv.set_item_id(item_id)
-        new_values = {"$set": nv.__dict__}
+        nv = dict()
+        nv['address'] = boundary.get_address()
+        nv['active'] = boundary.get_active()
+        nv['item_attributes'] = boundary.get_item_attributes()
+        new_values = {"$set": nv}
         try:
             items_db.update_one(my_query, new_values)
         except mongodb_errors:
@@ -81,5 +86,10 @@ class item_service:
         except mongodb_errors:
             print(str(mongodb_errors))
         for rv in entities:
-            items.append(item_boundary(rv['item_id'], rv['type'], rv['address'], rv['active'], '', rv['item_attributes'], rv['created_by']))
-        return items
+            items.append(
+                item_boundary(rv['item_id'], rv['type'], rv['address'], rv['active'], rv['date_of_upload'], rv['item_attributes'],
+                              rv['created_by']))
+        my_dict = dict()
+        for index, value in enumerate(items):
+            my_dict[index] = value.__dict__
+        return my_dict

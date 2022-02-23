@@ -8,7 +8,7 @@ app_file2 = Blueprint('app_file2', __name__)
 item_service = item_service()
 
 
-@app_file2.route('/fma/items/<user_email>', methods=["POST"])
+@app_file2.route('/fma/items/by_user/<user_email>', methods=["GET"])
 def get_items_of_specific_search_by_user(user_email) -> json:
     return item_service.get_all_items(user_email)
 
@@ -31,6 +31,6 @@ def store_item() -> json:
 def update_item(item_id) -> json:
     rv = request.get_json()
     item = item_boundary(
-        rv['item_id'], rv['type'], rv['address'], rv['active'], '', rv['item_attributes'], rv['created_by']
+        '', '', rv['address'], rv['active'], '', rv['item_attributes'], ''
     )
     return item_service.update_item(item_id, item)
