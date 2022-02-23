@@ -1,6 +1,4 @@
 from src.main.fma.controllers import users_db
-
-from src.main.fma.data import user_entity
 from src.main.fma.data.user_role import Role
 
 
