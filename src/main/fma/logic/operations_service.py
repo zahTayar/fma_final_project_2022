@@ -17,7 +17,7 @@ import uuid
 # List <operationBoundary> getAllOperations (adminEmail)
 # void deleteAllOperations (adminEmail)
 
-class operation_service:
+class operations_service:
     def __init__(self):
         self.search = search()
         self.update_db = update_db()
