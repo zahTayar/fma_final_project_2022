@@ -1,6 +1,6 @@
 import json
 from flask import Blueprint, render_template, session, abort, request
-from src.main.fma.logic.operations_service import operation_service
+from src.main.fma.logic.operations_service import operations_service
 from src.main.fma.boundaries.operation_boundary import operation_boundary
 from src.main.fma.controllers import operations_db
 
@@ -21,7 +21,7 @@ def invoked_operation() -> json:
     #     "operation_attributes": "operation_attributes"
     # })
 
-    return operation_service.invoke_operation(operation)
+    return operations_service.invoke_operation(operation)
 
 
 @app_file3.route('/fma/operations/async', methods=["POST"])

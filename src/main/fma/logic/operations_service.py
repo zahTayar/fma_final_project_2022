@@ -34,22 +34,27 @@ class operations_service:
             self.search.search()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
+            return self.convert_entity_to_boundary(entity).__dict__
         if boundary.get_type == 'update_db':
             self.update_db.update_db()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
+            return self.convert_entity_to_boundary(entity).__dict__
         if boundary.get_type == 'send_alert':
             self.send_alert.send_alert()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
+            return self.convert_entity_to_boundary(entity).__dict__
         if boundary.get_type == 'display_relevent_prop':
             self.display_relevent_prop.display_relevent_prop()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
+            return self.convert_entity_to_boundary(entity).__dict__
         if boundary.get_type == 'calculate_increase_in_value':
             self.calculate_increase_in_value.calculate_increase_in_value()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
+            return self.convert_entity_to_boundary(entity).__dict__
 
     def invoke_async_operation(self, boundary):
         return None
