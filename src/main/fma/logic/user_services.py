@@ -57,7 +57,8 @@ class user_service:
         # check if the user is admin
         if not self.checker.check_admin_user(admin_entity.get_email()):
             raise RuntimeError("not autorizhed to act this operation")
-        users_db.delete_many({})
+        x = users_db.delete_many({})
+        return {"operation": "success","deleted": x.deleted_count}
 
     def get_all_users(self, admin_email):
         query = {"user_id": admin_email}
