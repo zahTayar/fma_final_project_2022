@@ -6,12 +6,12 @@ from src.main.fma.controllers import operations_db
 
 app_file3 = Blueprint('app_file3', __name__)
 
-
+service = operations_service()
 @app_file3.route('/fma/operations', methods=["POST"])
 def invoked_operation() -> json:
     rv = request.get_json()
     operation = operation_boundary(
-        rv['operation_id'], rv['type'], rv['invoked_by'], rv['created_timestamp'], rv['operation_attributes']
+        rv['_id'], rv['type'], rv['created_timestamp'],  rv['invoked_by'], rv['operation_attributes']
     )
     # response = operations_db.insert({
     #     "_id": "operation_id",
@@ -21,7 +21,7 @@ def invoked_operation() -> json:
     #     "operation_attributes": "operation_attributes"
     # })
 
-    return operations_service.invoke_operation(operation)
+    return service.invoke_operation(boundary=operation)
 
 
 @app_file3.route('/fma/operations/async', methods=["POST"])

@@ -27,11 +27,9 @@ class operations_service:
         self.checker_authorization = checker_authorization()
 
     def invoke_operation(self, boundary):
-
         entity = self.convert_boundary_to_entity(boundary)
-
-        if boundary.get_type == 'search':
-            self.search.search()
+        if boundary.get_type() == 'search':
+            self.search.search(boundary.get_operation_attributes()[""])
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
             return self.convert_entity_to_boundary(entity).__dict__
@@ -40,17 +38,17 @@ class operations_service:
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
             return self.convert_entity_to_boundary(entity).__dict__
-        if boundary.get_type == 'send_alert':
+        if boundary.get_type() == 'send_alert':
             self.send_alert.send_alert()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
             return self.convert_entity_to_boundary(entity).__dict__
-        if boundary.get_type == 'display_relevent_prop':
+        if boundary.get_type() == 'display_relevent_prop':
             self.display_relevent_prop.display_relevent_prop()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
             return self.convert_entity_to_boundary(entity).__dict__
-        if boundary.get_type == 'calculate_increase_in_value':
+        if boundary.get_type() == 'calculate_increase_in_value':
             self.calculate_increase_in_value.calculate_increase_in_value()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
@@ -64,13 +62,13 @@ class operations_service:
         entity.set_type(boundary.get_type())
         entity.set_operation_attributes(boundary.get_operation_attributes())
         entity.set_invoked_by(boundary.get_invoked_by())
-        entity.set_created_timestamp(datetime.now().strftime("%m/%d/%Y, %H:%M:%S"))
+        entity.set_created_timestamp(datetime.now().strftime("%d/%m/%Y, %H:%M:%S"))
         return entity
 
     def convert_entity_to_boundary(self, entity):
         boundary = operation_boundary()
         boundary.set_operation_id(entity.get_operation_id())
-        boundary.set_type(entity.set_type())
+        boundary.set_type(entity.get_type())
         boundary.set_operation_attributes(entity.get_operation_attributes())
         boundary.set_invoked_by(entity.get_invoked_by())
         boundary.set_created_timestamp(entity.get_created_timestamp())
