@@ -1,25 +1,19 @@
 class user_entity:
 
-    def __init__(self, email="", role="", username="", avatar="", _id="", last_searched=[], password=""):
+    def __init__(self, email="", role="", username="", avatar="", user_id="", last_searched=[]):
         self.email = email
         self.role = role
         self.username = username
         self.avatar = avatar
-        self._id = _id
+        self.user_id = user_id
         self.last_searched = last_searched
-        self.password = password
 
-    def get_pass(self):
-        return self.password
-
-    def set_password(self, password):
-        self.password = password
 
     def get_user_id(self):
-        return self._id
+        return self.user_id
 
-    def set_user_id(self, _id):
-        self._id = _id
+    def set_user_id(self, user_id):
+        self.user_id = user_id
 
     def get_role(self):
         return self.role

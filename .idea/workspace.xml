@@ -20,15 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="583031cf-6bc8-4011-a5d7-8d3c961cade2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_02_2022_14_18_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_02_2022_14_18__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_02_2022_14_34_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_02_2022_14_34__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_02_2022_14_51_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_02_2022_14_51__Default_Changelist_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/fma/apis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fma_final_project_2022.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fma_final_project_2022.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/fma/boundaries/operation_boundary.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/boundaries/operation_boundary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/boundaries/new_user_details.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/boundaries/new_user_details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/boundaries/user_boundary.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/boundaries/user_boundary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/controllers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/controllers/admin_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/controllers/admin_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/controllers/operation_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/controllers/operation_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/controllers/user_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/controllers/user_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/data/operation_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/data/operation_entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/data/user_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/data/user_entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/helpers/checker_authorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/helpers/checker_authorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/logic/operations_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/logic/operations_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/fma/logic/user_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/logic/user_services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/logic/yad2_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/apis/yad2_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,6 +1,5 @@
-from src.main.fma.data.user_role import Role
 class new_user_details:
-    def __init__(self, email="", username="", avatar="", password="", role=Role.USER.name):
+    def __init__(self, email="", username="", avatar="", role="", password=""):
         self.email = email
         self.username = username
         self.avatar = avatar
@@ -32,8 +31,5 @@ class new_user_details:
     def set_new_password(self, password):
         # doing some hash for password
         self.password = password
-
-    def get_password(self):
-        return self.password
 
 
