@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+from src.main.fma.controllers import yad_2_db
 import time
 import logging
 import os
@@ -98,7 +99,7 @@ class yad2_searcher:
 
     def add_apartment_details(self):
         driver = self.driver
-        self.apartments.append({
+        tmp_apartment = {
             'description': driver.find_element_by_xpath("(//*[contains(@class, 'show_more content')])").text,
             'price': driver.find_element_by_xpath("(//strong[@class = 'price'])").text,
             'num_of_rooms': driver.find_element_by_xpath("(//dl[@class = 'cell rooms-item'])").text.split('\n')[0],
@@ -114,7 +115,8 @@ class yad2_searcher:
             'pictures': self.find_pictures(),
             'contract_name': driver.find_element_by_xpath("(//span[@class = 'name'])").text,
             'contract_phone': self.find_phone_number()
-        })
+        }
+        yad_2_db.insert(tmp_apartment)
 
 
 searcher = yad2_searcher()
