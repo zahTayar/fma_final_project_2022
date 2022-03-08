@@ -50,10 +50,10 @@ class operations_service:
             operations_db.insert(entity.__dict__)
             return self.convert_entity_to_boundary(entity).__dict__
         if boundary.get_type() == 'calculate_increase_in_value':
-            self.calculate_increase_in_value.calculate_increase_in_value()
-            entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
-            return self.convert_entity_to_boundary(entity).__dict__
+            return self.calculate_increase_in_value.calculate_increase_in_value(boundary.get_operation_attributes()["asset_room_numebers"],
+                                                                         boundary.get_operation_attributes()["asset_size_in_meters"],
+                                                                         boundary.get_operation_attributes()["location"])
 
     def invoke_async_operation(self, boundary):
         return None
