@@ -1,13 +1,10 @@
 import pymongo.errors as mongodb_errors
-from bson import json_util
-
 from src.main.fma.controllers import items_db
 from src.main.fma.boundaries.item_boundary import item_boundary
 from src.main.fma.helpers.checker_authorization import checker_authorization
 from src.main.fma.data.item_entity import item_entity
 from datetime import datetime
 import uuid
-import json
 
 
 class item_service:

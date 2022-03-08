@@ -29,20 +29,21 @@ class operations_service:
     def invoke_operation(self, boundary):
         entity = self.convert_boundary_to_entity(boundary)
         if boundary.get_type() == 'search':
-            self.search.search(boundary.get_operation_attributes()[""])
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
-            return self.convert_entity_to_boundary(entity).__dict__
-        if boundary.get_type == 'update_db':
-            self.update_db.update_db()
+            return self.search.search_apartment(boundary.get_operation_attributes()["item_id"]).__dict__
+
+        if boundary.get_type() == 'search_apartments_data':
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
-            return self.convert_entity_to_boundary(entity).__dict__
+            return self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"]).__dict__
+
         if boundary.get_type() == 'send_alert':
             self.send_alert.send_alert()
             entity.set_operation_id(str(uuid.uuid4()))
             operations_db.insert(entity.__dict__)
             return self.convert_entity_to_boundary(entity).__dict__
+
         if boundary.get_type() == 'display_relevent_prop':
             self.display_relevent_prop.display_relevent_prop()
             entity.set_operation_id(str(uuid.uuid4()))
