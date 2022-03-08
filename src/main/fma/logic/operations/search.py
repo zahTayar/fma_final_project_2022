@@ -41,7 +41,7 @@ class search:
         neighbor = location['neighbor']
         city = location['city']
         square_meter = search_details['square_meter']
-        apartments = list(yad_2_db.find({
+        return list(yad_2_db.find({
             '$and': [
                 {'price': {
                     '$lt': price

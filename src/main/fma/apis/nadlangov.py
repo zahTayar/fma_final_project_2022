@@ -8,7 +8,7 @@ import math
 from src.main.fma.controllers import nadlan_gov_db
 
 log = logging.getLogger("MAIN LOGGER")
-logging.basicConfig(filename="../logs/nadlan_log.md", filemode='w',
+logging.basicConfig(filename="logs/nadlan_log.md", filemode='w',
                     format='%(asctime)s, %(msecs)d, %(name)s, %(levelname)s, %(message)s',
                     datefmt='%H:%M:%S',
                     level=logging.DEBUG)
@@ -61,7 +61,7 @@ class nadlangov():
                     log.info("FAILED,page number %d didn't load right please verify connection\n", counter_for_pages)
                     log.info("ERROR: %s", e)
 
-        self.data_manager(all_pages=all_town)
+        return all_town
 
     # Generate unique id
     def generate_unique_id(self):
@@ -182,6 +182,3 @@ class nadlangov():
                 nadlan_gov_db.insert_one(asset_with_my_fields)
 
         print(all_pages)
-
-naslan=nadlangov()
-naslan.search_all_town()

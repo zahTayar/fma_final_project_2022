@@ -6,7 +6,6 @@ from selenium.common.exceptions import NoSuchElementException
 from src.main.fma.controllers import yad_2_db
 import time
 import logging
-import os
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 
@@ -22,9 +21,10 @@ class yad2_searcher:
         self.driver = webdriver.Chrome(PATH, chrome_options=chrome_options)
         self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         self.apartments = []
-        log_dir = os.path.join(os.path.normpath(os.getcwd() + os.sep + os.pardir), 'logs')
-        log_fname = os.path.join(log_dir, 'yad2.log')
-        logging.basicConfig(level=logging.INFO, filename=log_fname, filemode="w")
+        logging.basicConfig(filename="logs/nadlan_log.md", filemode='w',
+                            format='%(asctime)s, %(msecs)d, %(name)s, %(levelname)s, %(message)s',
+                            datefmt='%H:%M:%S',
+                            level=logging.INFO)
         logging.info('Initial driver done')
         logging.info('###############################')
 
@@ -116,8 +116,12 @@ class yad2_searcher:
             'contract_name': driver.find_element_by_xpath("(//span[@class = 'name'])").text,
             'contract_phone': self.find_phone_number()
         }
-        yad_2_db.insert(tmp_apartment)
+        self.apartments.append(tmp_apartment)
+
+    def data_manager(self):
+        for apartment in self.apartments:
+            yad_2_db.insert(apartment)
 
 
-searcher = yad2_searcher()
-searcher.search_in_yad2()
+#searcher = yad2_searcher()
+#searcher.search_in_yad2()

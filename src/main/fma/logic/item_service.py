@@ -24,10 +24,15 @@ class item_service:
         return self.convert_entity_to_boundary(entity).__dict__
 
     def create_item(self, boundary):
+        self.check_search_attributes(boundary.get_item_attributes())
         entity = self.convert_boundary_to_entity(boundary)
         entity.set_item_id(str(uuid.uuid4()))
         items_db.insert(entity.__dict__)
         return self.convert_entity_to_boundary(entity).__dict__
+
+    def check_search_attributes(self, search):
+        if not all(key in search for key in ('price', 'num_of_rooms','location', 'square_meter')):
+            raise RuntimeError('search input invalid')
 
     def convert_entity_to_boundary(self, entity):
         boundary = item_boundary()
