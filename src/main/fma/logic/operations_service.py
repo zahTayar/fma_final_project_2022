@@ -2,9 +2,7 @@ from src.main.fma.controllers import operations_db
 from src.main.fma.boundaries.operation_boundary import operation_boundary
 from src.main.fma.helpers.checker_authorization import checker_authorization
 from src.main.fma.logic.operations.search import search
-from src.main.fma.logic.operations.update_db import update_db
 from src.main.fma.logic.operations.send_alert import send_alert
-from src.main.fma.logic.operations.display_relevent_prop import display_relevent_prop
 from src.main.fma.logic.operations.calculate_increase_in_value import calculate_incrase_in_value
 from src.main.fma.data.operation_entity import operation_entity
 import pymongo.errors as mongodb_errors
@@ -20,9 +18,7 @@ import uuid
 class operations_service:
     def __init__(self):
         self.search = search()
-        self.update_db = update_db()
         self.send_alert = send_alert()
-        self.display_relevent_prop = display_relevent_prop()
         self.calculate_increase_in_value = calculate_incrase_in_value()
         self.checker_authorization = checker_authorization()
 
@@ -44,11 +40,6 @@ class operations_service:
             operations_db.insert(entity.__dict__)
             return self.convert_entity_to_boundary(entity).__dict__
 
-        if boundary.get_type() == 'display_relevent_prop':
-            self.display_relevent_prop.display_relevent_prop()
-            entity.set_operation_id(str(uuid.uuid4()))
-            operations_db.insert(entity.__dict__)
-            return self.convert_entity_to_boundary(entity).__dict__
         if boundary.get_type() == 'calculate_increase_in_value':
             operations_db.insert(entity.__dict__)
             return self.calculate_increase_in_value.calculate_increase_in_value(boundary.get_operation_attributes()["asset_room_numebers"],
