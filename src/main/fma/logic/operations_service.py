@@ -24,27 +24,26 @@ class operations_service:
 
     def invoke_operation(self, boundary):
         entity = self.convert_boundary_to_entity(boundary)
+        entity.set_operation_id(str(uuid.uuid4()))
+        operations_db.insert(entity.__dict__)
+
         if boundary.get_type() == 'search':
-            entity.set_operation_id(str(uuid.uuid4()))
-            operations_db.insert(entity.__dict__)
             return self.search.search_apartment(boundary.get_operation_attributes()["item_id"]).__dict__
 
         if boundary.get_type() == 'search_apartments_data':
-            entity.set_operation_id(str(uuid.uuid4()))
-            operations_db.insert(entity.__dict__)
-            return self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"]).__dict__
+            rv = self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"]).__dict__
+            print(rv)
+            return rv
 
         if boundary.get_type() == 'send_alert':
             self.send_alert.send_alert()
-            entity.set_operation_id(str(uuid.uuid4()))
-            operations_db.insert(entity.__dict__)
             return self.convert_entity_to_boundary(entity).__dict__
 
         if boundary.get_type() == 'calculate_increase_in_value':
-            operations_db.insert(entity.__dict__)
-            return self.calculate_increase_in_value.calculate_increase_in_value(boundary.get_operation_attributes()["asset_room_numebers"],
-                                                                         boundary.get_operation_attributes()["asset_size_in_meters"],
-                                                                         boundary.get_operation_attributes()["location"])
+            return self.calculate_increase_in_value.calculate_increase_in_value(
+                boundary.get_operation_attributes()["asset_room_numebers"],
+                boundary.get_operation_attributes()["asset_size_in_meters"],
+                boundary.get_operation_attributes()["location"])
 
     def invoke_async_operation(self, boundary):
         return None
