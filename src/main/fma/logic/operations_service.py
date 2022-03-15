@@ -8,6 +8,7 @@ from src.main.fma.data.operation_entity import operation_entity
 import pymongo.errors as mongodb_errors
 from datetime import datetime
 import uuid
+import json
 
 
 # object  invokeOperation (operationBoundary)
@@ -28,12 +29,26 @@ class operations_service:
         operations_db.insert(entity.__dict__)
 
         if boundary.get_type() == 'search':
-            return self.search.search_apartment(boundary.get_operation_attributes()["item_id"]).__dict__
+            lst = self.search.search_apartment(boundary.get_operation_attributes()["item_id"])
+            result = {}
+            if not lst:
+                return {}
+            for apa in lst:
+                js = self.convert_apartment(apa)
+                result[str(lst.index(apa))] = js
+            print(result)
+            return result
 
         if boundary.get_type() == 'search_apartments_data':
-            rv = self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"]).__dict__
-            print(rv)
-            return rv
+            lst = self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"])
+            if not lst:
+                return {}
+            result = {}
+            for apa in lst:
+                js = self.convert_data_apartment(apa)
+                result[str(lst.index(apa))] = js
+            print(result)
+            return result
 
         if boundary.get_type() == 'send_alert':
             self.send_alert.send_alert()
@@ -44,6 +59,24 @@ class operations_service:
                 boundary.get_operation_attributes()["asset_room_numebers"],
                 boundary.get_operation_attributes()["asset_size_in_meters"],
                 boundary.get_operation_attributes()["location"])
+
+    def convert_apartment(self, apartment):
+        rv = {'description': apartment['description'], 'price': apartment['price'],
+              'num_of_rooms': apartment['num_of_rooms'], 'floor': apartment['floor'],
+              'street': apartment['street'],
+              'neighbor': apartment['neighbor'], 'city': apartment['city'],
+              'square_meter': apartment['square_meter'],
+              'date_of_uploaded': apartment['date_of_uploaded'], 'pictures': apartment['pictures'],
+              'contract_name': apartment['contract_name'], 'contract_phone': apartment['contract_phone']}
+        return rv
+
+    def convert_data_apartment(self, apartment):
+        rv = {'full_address': apartment['full_address'], 'street_and_number': apartment['street_and_number'],
+              'deal_description': apartment['deal_description'], 'asset_room_numbers': apartment['asset_room_numbers'],
+              'asset_size_in_meters': apartment['asset_size_in_meters'],
+              'price_sold_asset': apartment['price_sold_asset'], 'date_deal': apartment['date_deal'],
+              'year_building_build': apartment['year_building_build']}
+        return rv
 
     def invoke_async_operation(self, boundary):
         return None
