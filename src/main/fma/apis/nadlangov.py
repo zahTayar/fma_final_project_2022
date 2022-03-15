@@ -8,7 +8,7 @@ import math
 from src.main.fma.controllers import nadlan_gov_db
 
 log = logging.getLogger("MAIN LOGGER")
-logging.basicConfig(filename="logs/nadlan_log.md", filemode='w',
+logging.basicConfig(filename="../fma/logs/nadlan_log.md", filemode='w',
                     format='%(asctime)s, %(msecs)d, %(name)s, %(levelname)s, %(message)s',
                     datefmt='%H:%M:%S',
                     level=logging.DEBUG)
