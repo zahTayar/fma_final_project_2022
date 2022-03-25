@@ -1,6 +1,7 @@
 from src.main.fma.apis.yad2_searcher_api import yad2_searcher_api
 from src.main.fma.apis.nadlangov import nadlangov
 from src.main.fma.controllers import db
+from src.main.fma.apis.send_alert import send_alert
 
 
 class worker:
@@ -18,3 +19,7 @@ class worker:
         # import new data
         self.searcher_nadlan.data_manager(apartments_data)
         self.yad2_searcher_api.data_manager()
+        #send alerts to users
+        # s = send_alert()
+        # s.send_email_with_update()
+

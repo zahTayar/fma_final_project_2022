@@ -2,13 +2,11 @@ from src.main.fma.controllers import operations_db
 from src.main.fma.boundaries.operation_boundary import operation_boundary
 from src.main.fma.helpers.checker_authorization import checker_authorization
 from src.main.fma.logic.operations.search import search
-from src.main.fma.logic.operations.send_alert import send_alert
 from src.main.fma.logic.operations.calculate_increase_in_value import calculate_incrase_in_value
 from src.main.fma.data.operation_entity import operation_entity
 import pymongo.errors as mongodb_errors
 from datetime import datetime
 import uuid
-import json
 
 
 # object  invokeOperation (operationBoundary)
@@ -19,7 +17,6 @@ import json
 class operations_service:
     def __init__(self):
         self.search = search()
-        self.send_alert = send_alert()
         self.calculate_increase_in_value = calculate_incrase_in_value()
         self.checker_authorization = checker_authorization()
 
@@ -49,10 +46,6 @@ class operations_service:
                 result[str(lst.index(apa))] = js
             print(result)
             return result
-
-        if boundary.get_type() == 'send_alert':
-            self.send_alert.send_alert()
-            return self.convert_entity_to_boundary(entity).__dict__
 
         if boundary.get_type() == 'calculate_increase_in_value':
             return self.calculate_increase_in_value.calculate_increase_in_value(
@@ -101,7 +94,7 @@ class operations_service:
     def get_all_operations(self, admin_email):
         # check auth of admin_email
         if not self.checker_authorization.check_admin_user(admin_email):
-            raise RuntimeError("not autorizhed to act this operation")
+            raise RuntimeError("not authorized to act this operation")
         operations = []
         entities = []
         try:
@@ -120,7 +113,7 @@ class operations_service:
     def delete_all_operation(self, admin_email):
         # check auth of admin_email
         if not self.checker_authorization.check_admin_user(admin_email):
-            raise RuntimeError("not autorizhed to act this operation")
+            raise RuntimeError("not authorized to act this operation")
         x = []
         try:
             x = operations_db.delete_many({})
