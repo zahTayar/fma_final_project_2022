@@ -8,18 +8,17 @@ class worker:
     def __init__(self):
         self.yad2_searcher_api = yad2_searcher_api()
         self.searcher_nadlan = nadlangov()
+        self.s = send_alert()
 
     def update_db(self):
         # search for new data
         self.yad2_searcher_api.search_apartments()
         apartments_data = self.searcher_nadlan.search_all_town()
-        # remove
+        # # remove
         db.apartments.remove({})
         db.apartments_data.remove({})
-        # import new data
+        # # import new data
         self.searcher_nadlan.data_manager(apartments_data)
         self.yad2_searcher_api.data_manager()
-        #send alerts to users
-        # s = send_alert()
-        # s.send_email_with_update()
-
+        # send alerts to users
+        self.s.send_email_with_update()

@@ -11,17 +11,17 @@ URL_PAGE = "https://gw.yad2.co.il/feed-search-legacy/realestate/forsale?page="
 class yad2_searcher_api:
     def __init__(self):
         self.apartments = []
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('--disable-extensions')
-        chrome_options.add_argument('--profile-directory=Default')
-        chrome_options.add_argument("--disable-plugins-discovery")
-        chrome_options.add_argument("--start-maximized")
-        chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        chrome_options.add_experimental_option('useAutomationExtension', False)
-        self.driver = webdriver.Chrome('C:\\Users\\User\\Desktop\\chromedriver.exe', options=chrome_options)
-        self.driver.delete_all_cookies()
-        self.driver.set_window_size(800, 800)
-        self.driver.set_window_position(0, 0)
+        # chrome_options = webdriver.ChromeOptions()
+        # chrome_options.add_argument('--disable-extensions')
+        # chrome_options.add_argument('--profile-directory=Default')
+        # chrome_options.add_argument("--disable-plugins-discovery")
+        # chrome_options.add_argument("--start-maximized")
+        # chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        # chrome_options.add_experimental_option('useAutomationExtension', False)
+        # self.driver = webdriver.Chrome('C:\\Users\\User\\Desktop\\chromedriver.exe', options=chrome_options)
+        # self.driver.delete_all_cookies()
+        # self.driver.set_window_size(800, 800)
+        # self.driver.set_window_position(0, 0)
         self.num_of_pages = 0
         self.header = {
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
@@ -47,11 +47,15 @@ class yad2_searcher_api:
             self.search_apartment_in_page(i + 1)
 
     def search_apartment_in_page(self, i):
+        global r
         if i == 1:
             url = URL
         else:
             url = URL_PAGE + str(i)
-        r = requests.get(url, headers=self.header).json()
+        try:
+            r = requests.get(url, headers=self.header).json()
+        except requests.exceptions.RequestException as e:
+            print(e)
         apartments_json = r.get('data').get('feed').get('feed_items')
         for apartment in apartments_json:
             if apartment.get('city') != 'קרית שמונה':
@@ -105,7 +109,8 @@ class yad2_searcher_api:
         # }
         # rv = requests.get('https://mhaifafc.com/')
         # r = requests.get(url, headers=headers, cookies=rv.cookies)
-        self.driver.get(url)
+        # self.driver.get(url)
+        return '054-3246673'
 
 
 
