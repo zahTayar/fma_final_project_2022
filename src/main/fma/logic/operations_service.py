@@ -2,7 +2,6 @@ from src.main.fma.controllers import operations_db
 from src.main.fma.boundaries.operation_boundary import operation_boundary
 from src.main.fma.helpers.checker_authorization import checker_authorization
 from src.main.fma.logic.operations.search import search
-from src.main.fma.logic.operations.send_alert import send_alert
 from src.main.fma.logic.operations.calculate_increase_in_value import calculate_incrase_in_value
 from src.main.fma.data.operation_entity import operation_entity
 import pymongo.errors as mongodb_errors
@@ -18,7 +17,6 @@ import uuid
 class operations_service:
     def __init__(self):
         self.search = search()
-        self.send_alert = send_alert()
         self.calculate_increase_in_value = calculate_incrase_in_value()
         self.checker_authorization = checker_authorization()
 
@@ -28,22 +26,50 @@ class operations_service:
         operations_db.insert(entity.__dict__)
 
         if boundary.get_type() == 'search':
-            return self.search.search_apartment(boundary.get_operation_attributes()["item_id"]).__dict__
+            lst = self.search.search_apartment(boundary.get_operation_attributes()["item_id"])
+            result = {}
+            if not lst:
+                return {}
+            for apa in lst:
+                js = self.convert_apartment(apa)
+                result[str(lst.index(apa))] = js
+            print(result)
+            return result
 
         if boundary.get_type() == 'search_apartments_data':
-            rv = self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"]).__dict__
-            print(rv)
-            return rv
-
-        if boundary.get_type() == 'send_alert':
-            self.send_alert.send_alert()
-            return self.convert_entity_to_boundary(entity).__dict__
+            lst = self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"])
+            if not lst:
+                return {}
+            result = {}
+            for apa in lst:
+                js = self.convert_data_apartment(apa)
+                result[str(lst.index(apa))] = js
+            print(result)
+            return result
 
         if boundary.get_type() == 'calculate_increase_in_value':
             return self.calculate_increase_in_value.calculate_increase_in_value(
                 boundary.get_operation_attributes()["asset_room_numebers"],
                 boundary.get_operation_attributes()["asset_size_in_meters"],
                 boundary.get_operation_attributes()["location"])
+
+    def convert_apartment(self, apartment):
+        rv = {'description': apartment['description'], 'price': apartment['price'],
+              'num_of_rooms': apartment['num_of_rooms'], 'floor': apartment['floor'],
+              'street': apartment['street'],
+              'neighbor': apartment['neighbor'], 'city': apartment['city'],
+              'square_meter': apartment['square_meter'],
+              'date_of_uploaded': apartment['date_of_uploaded'], 'pictures': apartment['pictures'],
+              'contract_name': apartment['contract_name'], 'contract_phone': apartment['contract_phone']}
+        return rv
+
+    def convert_data_apartment(self, apartment):
+        rv = {'full_address': apartment['full_address'], 'street_and_number': apartment['street_and_number'],
+              'deal_description': apartment['deal_description'], 'asset_room_numbers': apartment['asset_room_numbers'],
+              'asset_size_in_meters': apartment['asset_size_in_meters'],
+              'price_sold_asset': apartment['price_sold_asset'], 'date_deal': apartment['date_deal'],
+              'year_building_build': apartment['year_building_build']}
+        return rv
 
     def invoke_async_operation(self, boundary):
         return None
@@ -68,7 +94,7 @@ class operations_service:
     def get_all_operations(self, admin_email):
         # check auth of admin_email
         if not self.checker_authorization.check_admin_user(admin_email):
-            raise RuntimeError("not autorizhed to act this operation")
+            raise RuntimeError("not authorized to act this operation")
         operations = []
         entities = []
         try:
@@ -87,7 +113,7 @@ class operations_service:
     def delete_all_operation(self, admin_email):
         # check auth of admin_email
         if not self.checker_authorization.check_admin_user(admin_email):
-            raise RuntimeError("not autorizhed to act this operation")
+            raise RuntimeError("not authorized to act this operation")
         x = []
         try:
             x = operations_db.delete_many({})

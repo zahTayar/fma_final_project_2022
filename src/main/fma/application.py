@@ -31,7 +31,7 @@ def run_app():
     app.run(port=5500)
 
 
-# Helper function to easly  parallelize multiple functions
+# Helper function to easly parallelize multiple functions
 def parallelize_functions(*functions):
     processes = []
     for function in functions:
