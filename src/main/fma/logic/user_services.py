@@ -32,7 +32,6 @@ class user_service:
     def login(self, user_email):
         query = {"user_id": user_email}
         json = users_db.find_one(query)
-        print(json)
         entity = user_entity(json['email'],json['role'],json['username'],json['avatar'],json['last_searched'])
         if not entity:
             raise RuntimeError("Email not found/exist")
@@ -87,5 +86,5 @@ class user_service:
         user.set_avatar(user_ent.get_avatar())
         user.set_role(user_ent.get_role())
         user.set_username(user_ent.get_username())
-        user.set_email(user_ent.get_user_id())
+        user.set_email(user_ent.get_email())
         return user

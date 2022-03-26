@@ -1,4 +1,6 @@
 import json
+
+import flask
 from flask import Blueprint, render_template, session, abort, request
 from src.main.fma.controllers import users_db
 from src.main.fma.logic.user_services import user_service
@@ -16,7 +18,9 @@ def get_user_details(user_email) -> json:
     }
     service = user_service()
     res = service.login(user_email)
-    return res
+    d = flask.jsonify(res)
+    d.headers.add('Access-Control-Allow-Origin', '*')
+    return d
 
 
 @app_file4.route('/fma/users', methods=["POST"])
