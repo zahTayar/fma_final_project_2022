@@ -7,8 +7,10 @@ from src.main.fma.apis.worker import worker
 from time import sleep
 from datetime import datetime
 from multiprocessing import Process
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 app.register_blueprint(app_file1)
 app.register_blueprint(app_file2)
 app.register_blueprint(app_file3)
