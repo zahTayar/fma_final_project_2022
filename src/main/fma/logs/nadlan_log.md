@@ -1,231 +1,427 @@
-18:39:58, 865, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:39:59, 307, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "GET /Nadlan.REST/Main/GetDataByQuery?query=%D7%A7%D7%A8%D7%99%D7%AA%20%D7%A9%D7%9E%D7%95%D7%A0%D7%94 HTTP/1.1" 200 774
-18:39:59, 308, MAIN LOGGER, INFO, SUCCESS, please verify there is all possible towns in dict
-18:39:59, 310, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:39:59, 913, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10367
-18:39:59, 923, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '14.12.2021', 'DEALDATETIME': '2021-12-14T00:00:00', 'FULLADRESS': '��� ����� 7, ����� �����', 'DISPLAYADRESS': '��� ����� 7', 'GUSH': '13168-38-16', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '59.80', 'DEALAMOUNT': '450,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '4', 'KEYVALUE': '8114325914', 'TYPE': 1, 'POLYGON_ID': '13168-38', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:39:59, 924, MAIN LOGGER, INFO, page number 1 done successfully
-18:39:59, 927, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:00, 514, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10221
-18:40:00, 522, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '07.11.2021', 'DEALDATETIME': '2021-11-07T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '13397-19-24', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '����', 'DEALNATURE': '75', 'DEALAMOUNT': '880,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2021', 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '8113386909', 'TYPE': 2, 'POLYGON_ID': '13397-19', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:00, 522, MAIN LOGGER, INFO, page number 2 done successfully
-18:40:00, 524, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:01, 134, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10602
-18:40:01, 145, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '22.10.2021', 'DEALDATETIME': '2021-10-22T00:00:00', 'FULLADRESS': '����� 17, ����� �����', 'DISPLAYADRESS': '����� 17', 'GUSH': '13107-28-10', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '94.20', 'DEALAMOUNT': '665,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '8113046884', 'TYPE': 1, 'POLYGON_ID': '13107-28', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '87% � 9 ����'}
-18:40:01, 145, MAIN LOGGER, INFO, page number 3 done successfully
-18:40:01, 149, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:01, 789, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10708
-18:40:01, 799, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '07.10.2021', 'DEALDATETIME': '2021-10-07T00:00:00', 'FULLADRESS': '����� ���� 9, ����� �����', 'DISPLAYADRESS': '����� ���� 9', 'GUSH': '13107-16-10', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '����', 'DEALNATURE': '71', 'DEALAMOUNT': '610,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '4', 'KEYVALUE': '8113106648', 'TYPE': 1, 'POLYGON_ID': '13107-16', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '50% � 7.8 ����'}
-18:40:01, 799, MAIN LOGGER, INFO, page number 4 done successfully
-18:40:01, 801, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:02, 419, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10516
-18:40:02, 430, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '05.09.2021', 'DEALDATETIME': '2021-09-05T00:00:00', 'FULLADRESS': '�� ���� 32, ����� �����', 'DISPLAYADRESS': '�� ���� 32', 'GUSH': '14082-56-5', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '76.69', 'DEALAMOUNT': '765,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2005', 'YEARBUILT': '', 'BUILDINGFLOORS': '4', 'KEYVALUE': '8112404689', 'TYPE': 1, 'POLYGON_ID': '14082-56', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '106% � 14.9 ����'}
-18:40:02, 430, MAIN LOGGER, INFO, page number 5 done successfully
-18:40:02, 431, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:03, 23, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10400
-18:40:03, 51, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '19.08.2021', 'DEALDATETIME': '2021-08-19T00:00:00', 'FULLADRESS': '���� 25, ����� �����', 'DISPLAYADRESS': '���� 25', 'GUSH': '13109-38-13', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '87.50', 'DEALAMOUNT': '570,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '5', 'KEYVALUE': '8112132736', 'TYPE': 1, 'POLYGON_ID': '13109-38', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:03, 52, MAIN LOGGER, INFO, page number 6 done successfully
-18:40:03, 57, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:03, 644, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10566
-18:40:03, 654, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '06.08.2021', 'DEALDATETIME': '2021-08-06T00:00:00', 'FULLADRESS': '���"� 14, ����� �����', 'DISPLAYADRESS': '���"� 14', 'GUSH': '13220-13-8', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '63', 'DEALAMOUNT': '590,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1993', 'YEARBUILT': '', 'BUILDINGFLOORS': '1', 'KEYVALUE': '8111501931', 'TYPE': 1, 'POLYGON_ID': '13220-13', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:03, 654, MAIN LOGGER, INFO, page number 7 done successfully
-18:40:03, 657, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:04, 237, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10568
-18:40:04, 250, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '19.07.2021', 'DEALDATETIME': '2021-07-19T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-191', 'DEALNATUREDESCRIPTION': '����', 'ASSETROOMNUM': '1', 'FLOORNO': '������', 'DEALNATURE': '21', 'DEALAMOUNT': '515,000', 'NEWPROJECTTEXT': '1', 'PROJECTNAME': '����� �������� �� ��', 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '8111272054', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:04, 251, MAIN LOGGER, INFO, page number 8 done successfully
-18:40:04, 254, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:04, 874, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10490
-18:40:04, 885, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '27.06.2021', 'DEALDATETIME': '2021-06-27T00:00:00', 'FULLADRESS': '�� �� 68, ����� �����', 'DISPLAYADRESS': '�� �� 68', 'GUSH': '13107-12-32', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '75.60', 'DEALAMOUNT': '525,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '8110783959', 'TYPE': 1, 'POLYGON_ID': '13107-12', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '130% � 22.4 ����'}
-18:40:04, 885, MAIN LOGGER, INFO, page number 9 done successfully
-18:40:04, 887, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:05, 534, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10554
-18:40:05, 549, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '09.06.2021', 'DEALDATETIME': '2021-06-09T00:00:00', 'FULLADRESS': '��� ���� ���� 10, ����� �����', 'DISPLAYADRESS': '��� ���� ���� 10', 'GUSH': '13196-60-1', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '����', 'DEALNATURE': '75.80', 'DEALAMOUNT': '610,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1975', 'YEARBUILT': '', 'BUILDINGFLOORS': '8', 'KEYVALUE': '8110136203', 'TYPE': 1, 'POLYGON_ID': '13196-60', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:05, 549, MAIN LOGGER, INFO, page number 10 done successfully
-18:40:05, 556, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:06, 183, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10522
-18:40:06, 200, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '30.05.2021', 'DEALDATETIME': '2021-05-30T00:00:00', 'FULLADRESS': '����� 24, ����� �����', 'DISPLAYADRESS': '����� 24', 'GUSH': '13196-67-30', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '77.90', 'DEALAMOUNT': '510,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '8', 'KEYVALUE': '8109976944', 'TYPE': 1, 'POLYGON_ID': '13196-67', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:06, 200, MAIN LOGGER, INFO, page number 11 done successfully
-18:40:06, 207, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:06, 836, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10450
-18:40:06, 847, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '06.05.2021', 'DEALDATETIME': '2021-05-06T00:00:00', 'FULLADRESS': '��� 3, ����� �����', 'DISPLAYADRESS': '��� 3', 'GUSH': '13378-268-2', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '2', 'FLOORNO': '����', 'DEALNATURE': '48.40', 'DEALAMOUNT': '420,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '8109897348', 'TYPE': 1, 'POLYGON_ID': '13378-268', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:06, 848, MAIN LOGGER, INFO, page number 12 done successfully
-18:40:06, 853, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:07, 883, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10534
-18:40:07, 899, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '16.04.2021', 'DEALDATETIME': '2021-04-16T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-172', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '1', 'FLOORNO': '������', 'DEALNATURE': '21', 'DEALAMOUNT': '515,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '8109062193', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:07, 899, MAIN LOGGER, INFO, page number 13 done successfully
-18:40:07, 906, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:08, 537, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10518
-18:40:08, 548, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '16.03.2021', 'DEALDATETIME': '2021-03-16T00:00:00', 'FULLADRESS': '���������� 9, ����� �����', 'DISPLAYADRESS': '���������� 9', 'GUSH': '13167-37-5', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '5', 'FLOORNO': '������', 'DEALNATURE': '122', 'DEALAMOUNT': '690,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1980', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '8108445190', 'TYPE': 1, 'POLYGON_ID': '13167-37', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '84% � 9 ����'}
-18:40:08, 549, MAIN LOGGER, INFO, page number 14 done successfully
-18:40:08, 553, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:09, 182, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10568
-18:40:09, 197, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '21.02.2021', 'DEALDATETIME': '2021-02-21T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-166', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '1', 'FLOORNO': '����', 'DEALNATURE': '21', 'DEALAMOUNT': '540,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '8108115282', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:09, 197, MAIN LOGGER, INFO, page number 15 done successfully
-18:40:09, 205, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:09, 803, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10446
-18:40:09, 816, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '07.01.2021', 'DEALDATETIME': '2021-01-07T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '14084-11-9', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '���� \u200e0\u200f', 'DEALNATURE': '96.42', 'DEALAMOUNT': '948,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '8107594022', 'TYPE': 2, 'POLYGON_ID': '14084-11', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '9% � 3.6 ����'}
-18:40:09, 817, MAIN LOGGER, INFO, page number 16 done successfully
-18:40:09, 824, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:10, 429, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10631
-18:40:10, 442, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '21.12.2020', 'DEALDATETIME': '2020-12-21T00:00:00', 'FULLADRESS': '������� 4, ����� �����', 'DISPLAYADRESS': '������� 4', 'GUSH': '13163-9-4', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '69.20', 'DEALAMOUNT': '600,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1960', 'YEARBUILT': '', 'BUILDINGFLOORS': '1', 'KEYVALUE': '8045784981', 'TYPE': 1, 'POLYGON_ID': '13163-9', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '9% � 1 ����'}
-18:40:10, 443, MAIN LOGGER, INFO, page number 17 done successfully
-18:40:10, 452, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:11, 81, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10470
-18:40:11, 98, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '30.11.2020', 'DEALDATETIME': '2020-11-30T00:00:00', 'FULLADRESS': '����� 34, ����� �����', 'DISPLAYADRESS': '����� 34', 'GUSH': '13168-48-22', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '����', 'DEALNATURE': '59.80', 'DEALAMOUNT': '465,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '4', 'KEYVALUE': '8045355578', 'TYPE': 1, 'POLYGON_ID': '13168-48', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '27% � 5.7 ����'}
-18:40:11, 98, MAIN LOGGER, INFO, page number 18 done successfully
-18:40:11, 105, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:11, 747, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10503
-18:40:11, 757, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '02.11.2020', 'DEALDATETIME': '2020-11-02T00:00:00', 'FULLADRESS': '������� 43, ����� �����', 'DISPLAYADRESS': '������� 43', 'GUSH': '13376-127-37', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '����', 'DEALNATURE': '91.42', 'DEALAMOUNT': '850,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2000', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '8044891670', 'TYPE': 1, 'POLYGON_ID': '13376-127', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:11, 758, MAIN LOGGER, INFO, page number 19 done successfully
-18:40:11, 760, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:12, 289, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10456
-18:40:12, 305, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '22.09.2020', 'DEALDATETIME': '2020-09-22T00:00:00', 'FULLADRESS': '������� 40, ����� �����', 'DISPLAYADRESS': '������� 40', 'GUSH': '13135-131-5', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '����', 'DEALNATURE': '64.40', 'DEALAMOUNT': '480,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1960', 'YEARBUILT': '', 'BUILDINGFLOORS': '2', 'KEYVALUE': '8044155407', 'TYPE': 1, 'POLYGON_ID': '13135-131', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:12, 305, MAIN LOGGER, INFO, page number 20 done successfully
-18:40:12, 314, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:12, 889, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10384
-18:40:12, 905, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '06.09.2020', 'DEALDATETIME': '2020-09-06T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '14084-11-8', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '���� \u200e-1\u200f', 'DEALNATURE': '68.88', 'DEALAMOUNT': '764,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2019', 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '8043797828', 'TYPE': 2, 'POLYGON_ID': '14084-11', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:12, 905, MAIN LOGGER, INFO, page number 21 done successfully
-18:40:12, 913, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:13, 617, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10584
-18:40:13, 633, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '18.08.2020', 'DEALDATETIME': '2020-08-18T00:00:00', 'FULLADRESS': '���� 29, ����� �����', 'DISPLAYADRESS': '���� 29', 'GUSH': '13109-41-9', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '5', 'FLOORNO': '����', 'DEALNATURE': '101.80', 'DEALAMOUNT': '770,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '4', 'KEYVALUE': '8043494318', 'TYPE': 1, 'POLYGON_ID': '13109-41', 'TREND_IS_NEGATIVE': True, 'TREND_FORMAT': '-3% � 1.5 ����'}
-18:40:13, 634, MAIN LOGGER, INFO, page number 22 done successfully
-18:40:13, 642, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:14, 264, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10368
-18:40:14, 277, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '27.07.2020', 'DEALDATETIME': '2020-07-27T00:00:00', 'FULLADRESS': '���� ������ 33, ����� �����', 'DISPLAYADRESS': '���� ������ 33', 'GUSH': '13163-71-18', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '59.50', 'DEALAMOUNT': '370,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1960', 'YEARBUILT': '', 'BUILDINGFLOORS': '7', 'KEYVALUE': '8043484938', 'TYPE': 1, 'POLYGON_ID': '13163-71', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '34% � 5.4 ����'}
-18:40:14, 277, MAIN LOGGER, INFO, page number 23 done successfully
-18:40:14, 285, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:14, 905, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10602
-18:40:14, 915, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '13.07.2020', 'DEALDATETIME': '2020-07-13T00:00:00', 'FULLADRESS': '������� 57, ����� �����', 'DISPLAYADRESS': '������� 57', 'GUSH': '13376-94-2', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '����', 'DEALNATURE': '83.90', 'DEALAMOUNT': '915,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1998', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '8043070476', 'TYPE': 1, 'POLYGON_ID': '13376-94', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '63% � 9.1 ����'}
-18:40:14, 915, MAIN LOGGER, INFO, page number 24 done successfully
-18:40:14, 917, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:15, 538, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10666
-18:40:15, 555, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '19.06.2020', 'DEALDATETIME': '2020-06-19T00:00:00', 'FULLADRESS': '������� 49, ����� �����', 'DISPLAYADRESS': '������� 49', 'GUSH': '13135-147-23', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '����', 'DEALNATURE': '65.90', 'DEALAMOUNT': '490,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1980', 'YEARBUILT': '', 'BUILDINGFLOORS': '2', 'KEYVALUE': '8042548613', 'TYPE': 1, 'POLYGON_ID': '13135-147', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '63% � 7.8 ����'}
-18:40:15, 555, MAIN LOGGER, INFO, page number 25 done successfully
-18:40:15, 564, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:16, 222, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10388
-18:40:16, 236, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '19.05.2020', 'DEALDATETIME': '2020-05-19T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-142', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '1', 'FLOORNO': '�����', 'DEALNATURE': '21', 'DEALAMOUNT': '540,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '8042289926', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:16, 237, MAIN LOGGER, INFO, page number 26 done successfully
-18:40:16, 245, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:16, 885, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10623
-18:40:16, 899, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '12.03.2020', 'DEALDATETIME': '2020-03-12T00:00:00', 'FULLADRESS': '���"� 11, ����� �����', 'DISPLAYADRESS': '���"� 11', 'GUSH': '13097-38-10', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '77.30', 'DEALAMOUNT': '475,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1980', 'YEARBUILT': '', 'BUILDINGFLOORS': '5', 'KEYVALUE': '8041296048', 'TYPE': 1, 'POLYGON_ID': '13097-38', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '7% � 3.9 ����'}
-18:40:16, 899, MAIN LOGGER, INFO, page number 27 done successfully
-18:40:16, 907, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:17, 553, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10293
-18:40:17, 567, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '19.02.2020', 'DEALDATETIME': '2020-02-19T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-137', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '1', 'FLOORNO': '������', 'DEALNATURE': '32', 'DEALAMOUNT': '590,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '8040938402', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:17, 567, MAIN LOGGER, INFO, page number 28 done successfully
-18:40:17, 571, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:18, 217, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10248
-18:40:18, 227, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '14.01.2020', 'DEALDATETIME': '2020-01-14T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '14084-34-10', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '111', 'DEALAMOUNT': '1,100,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2012', 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '8040326558', 'TYPE': 2, 'POLYGON_ID': '14084-34', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:18, 228, MAIN LOGGER, INFO, page number 29 done successfully
-18:40:18, 234, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:18, 879, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10420
-18:40:18, 890, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '26.12.2019', 'DEALDATETIME': '2019-12-26T00:00:00', 'FULLADRESS': '������� 39, ����� �����', 'DISPLAYADRESS': '������� 39', 'GUSH': '13135-145-20', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '65.90', 'DEALAMOUNT': '415,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '2', 'KEYVALUE': '8040104855', 'TYPE': 1, 'POLYGON_ID': '13135-145', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '62% � 8 ����'}
-18:40:18, 890, MAIN LOGGER, INFO, page number 30 done successfully
-18:40:18, 896, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:19, 536, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10343
-18:40:19, 551, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '29.11.2019', 'DEALDATETIME': '2019-11-29T00:00:00', 'FULLADRESS': ' , ����� �����', 'DISPLAYADRESS': ' ', 'GUSH': '14084-34-15', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '5', 'FLOORNO': '������', 'DEALNATURE': '140', 'DEALAMOUNT': '1,445,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': None, 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '7978108616', 'TYPE': 1, 'POLYGON_ID': '14084-34', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:19, 552, MAIN LOGGER, INFO, page number 31 done successfully
-18:40:19, 560, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:20, 483, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10344
-18:40:20, 497, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '07.11.2019', 'DEALDATETIME': '2019-11-07T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-125', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '1', 'FLOORNO': '������', 'DEALNATURE': '32', 'DEALAMOUNT': '600,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '7977974281', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:20, 498, MAIN LOGGER, INFO, page number 32 done successfully
-18:40:20, 505, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:21, 194, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10358
-18:40:21, 207, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '18.10.2019', 'DEALDATETIME': '2019-10-18T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-116', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '1', 'FLOORNO': None, 'DEALNATURE': '21', 'DEALAMOUNT': '450,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '7977638745', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:21, 208, MAIN LOGGER, INFO, page number 33 done successfully
-18:40:21, 215, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:21, 853, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10340
-18:40:21, 863, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '18.09.2019', 'DEALDATETIME': '2019-09-18T00:00:00', 'FULLADRESS': '���"� 32, ����� �����', 'DISPLAYADRESS': '���"� 32', 'GUSH': '13097-15-12', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '78.60', 'DEALAMOUNT': '470,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1980', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '7977135843', 'TYPE': 1, 'POLYGON_ID': '13097-15', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '23% � 4.5 ����'}
-18:40:21, 864, MAIN LOGGER, INFO, page number 34 done successfully
-18:40:21, 866, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:22, 523, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10413
-18:40:22, 533, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '01.09.2019', 'DEALDATETIME': '2019-09-01T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-99', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '1', 'FLOORNO': '�����', 'DEALNATURE': '21', 'DEALAMOUNT': '480,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '7976846604', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:22, 533, MAIN LOGGER, INFO, page number 35 done successfully
-18:40:22, 534, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:23, 38, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10379
-18:40:23, 47, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '05.08.2019', 'DEALDATETIME': '2019-08-05T00:00:00', 'FULLADRESS': '����� 20, ����� �����', 'DISPLAYADRESS': '����� 20', 'GUSH': '13196-26-3', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '����', 'DEALNATURE': '78.30', 'DEALAMOUNT': '572,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '7976518840', 'TYPE': 1, 'POLYGON_ID': '13196-26', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '51% � 5.5 ����'}
-18:40:23, 47, MAIN LOGGER, INFO, page number 36 done successfully
-18:40:23, 49, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:23, 663, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10584
-18:40:23, 675, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '09.07.2019', 'DEALDATETIME': '2019-07-09T00:00:00', 'FULLADRESS': '���� ����� 1, ����� �����', 'DISPLAYADRESS': '���� ����� 1', 'GUSH': '13168-27-29', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '65.40', 'DEALAMOUNT': '410,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '4', 'KEYVALUE': '7976303234', 'TYPE': 1, 'POLYGON_ID': '13168-27', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '105% � 8.5 ����'}
-18:40:23, 676, MAIN LOGGER, INFO, page number 37 done successfully
-18:40:23, 683, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:24, 376, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10307
-18:40:24, 387, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '11.06.2019', 'DEALDATETIME': '2019-06-11T00:00:00', 'FULLADRESS': '���"� 9, ����� �����', 'DISPLAYADRESS': '���"� 9', 'GUSH': '13097-36-16', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '77.30', 'DEALAMOUNT': '575,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1980', 'YEARBUILT': '', 'BUILDINGFLOORS': '5', 'KEYVALUE': '7975885891', 'TYPE': 1, 'POLYGON_ID': '13097-36', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:24, 387, MAIN LOGGER, INFO, page number 38 done successfully
-18:40:24, 392, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:24, 962, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10474
-18:40:24, 976, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '05.05.2019', 'DEALDATETIME': '2019-05-05T00:00:00', 'FULLADRESS': '���"� 7, ����� �����', 'DISPLAYADRESS': '���"� 7', 'GUSH': '13097-11-6', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '87.90', 'DEALAMOUNT': '560,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1980', 'YEARBUILT': '', 'BUILDINGFLOORS': '5', 'KEYVALUE': '7974966651', 'TYPE': 1, 'POLYGON_ID': '13097-11', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:24, 976, MAIN LOGGER, INFO, page number 39 done successfully
-18:40:24, 983, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:25, 669, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10280
-18:40:25, 680, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '08.04.2019', 'DEALDATETIME': '2019-04-08T00:00:00', 'FULLADRESS': '�� �� 64, ����� �����', 'DISPLAYADRESS': '�� �� 64', 'GUSH': '13105-63-19', 'DEALNATUREDESCRIPTION': '����', 'ASSETROOMNUM': '', 'FLOORNO': '����', 'DEALNATURE': '25.60', 'DEALAMOUNT': '80,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '7974834527', 'TYPE': 1, 'POLYGON_ID': '13105-63', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:25, 681, MAIN LOGGER, INFO, page number 40 done successfully
-18:40:25, 688, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:26, 352, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10184
-18:40:26, 365, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '28.03.2019', 'DEALDATETIME': '2019-03-28T00:00:00', 'FULLADRESS': '���"� 40, ����� �����', 'DISPLAYADRESS': '���"� 40', 'GUSH': '13097-23-24', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '61.90', 'DEALAMOUNT': '480,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1980', 'YEARBUILT': '', 'BUILDINGFLOORS': '2', 'KEYVALUE': '7974461538', 'TYPE': 1, 'POLYGON_ID': '13097-23', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:26, 365, MAIN LOGGER, INFO, page number 41 done successfully
-18:40:26, 373, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:27, 29, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10407
-18:40:27, 44, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '03.03.2019', 'DEALDATETIME': '2019-03-03T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '13397-29-17', 'DEALNATUREDESCRIPTION': '����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '83', 'DEALAMOUNT': '650,000', 'NEWPROJECTTEXT': '1', 'PROJECTNAME': '��� ����� �', 'BUILDINGYEAR': '2017', 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '7974113272', 'TYPE': 2, 'POLYGON_ID': '13397-29', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:27, 45, MAIN LOGGER, INFO, page number 42 done successfully
-18:40:27, 52, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:27, 729, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10369
-18:40:27, 741, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '22.01.2019', 'DEALDATETIME': '2019-01-22T00:00:00', 'FULLADRESS': '����� 36, ����� �����', 'DISPLAYADRESS': '����� 36', 'GUSH': '13168-58-23', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '2', 'FLOORNO': '������', 'DEALNATURE': '47.80', 'DEALAMOUNT': '138,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '4', 'KEYVALUE': '7973452719', 'TYPE': 1, 'POLYGON_ID': '13168-58', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:27, 742, MAIN LOGGER, INFO, page number 43 done successfully
-18:40:27, 749, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:28, 461, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10314
-18:40:28, 480, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '21.12.2018', 'DEALDATETIME': '2018-12-21T00:00:00', 'FULLADRESS': '��� 11, ����� �����', 'DISPLAYADRESS': '��� 11', 'GUSH': '13377-5-59', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3.5', 'FLOORNO': '������ �������', 'DEALNATURE': '75.09', 'DEALAMOUNT': '650,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1996', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '7912619399', 'TYPE': 1, 'POLYGON_ID': '13377-5', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '124% � 10.5 ����'}
-18:40:28, 480, MAIN LOGGER, INFO, page number 44 done successfully
-18:40:28, 489, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:29, 17, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10467
-18:40:29, 29, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '29.11.2018', 'DEALDATETIME': '2018-11-29T00:00:00', 'FULLADRESS': '����� 14, ����� �����', 'DISPLAYADRESS': '����� 14', 'GUSH': '13378-223-37', 'DEALNATUREDESCRIPTION': "����' �� ������", 'ASSETROOMNUM': '4', 'FLOORNO': '���� ������ �����', 'DEALNATURE': '128.11', 'DEALAMOUNT': '799,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1999', 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '7911894660', 'TYPE': 1, 'POLYGON_ID': '13378-223', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '77% � 12.6 ����'}
-18:40:29, 29, MAIN LOGGER, INFO, page number 45 done successfully
-18:40:29, 37, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:29, 578, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10190
-18:40:29, 594, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '02.11.2018', 'DEALDATETIME': '2018-11-02T00:00:00', 'FULLADRESS': '���"� 42, ����� �����', 'DISPLAYADRESS': '���"� 42', 'GUSH': '13097-23-13', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '����', 'DEALNATURE': '79.10', 'DEALAMOUNT': '590,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1980', 'YEARBUILT': '', 'BUILDINGFLOORS': '2', 'KEYVALUE': '7911147945', 'TYPE': 1, 'POLYGON_ID': '13097-23', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': '62% � 15.6 ����'}
-18:40:29, 595, MAIN LOGGER, INFO, page number 46 done successfully
-18:40:29, 603, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:30, 283, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10060
-18:40:30, 297, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '10.10.2018', 'DEALDATETIME': '2018-10-10T00:00:00', 'FULLADRESS': '�� �� 83, ����� �����', 'DISPLAYADRESS': '�� �� 83', 'GUSH': '13167-7-42', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '1', 'FLOORNO': '������', 'DEALNATURE': '21', 'DEALAMOUNT': '445,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '2018', 'YEARBUILT': '', 'BUILDINGFLOORS': '9', 'KEYVALUE': '7911420970', 'TYPE': 1, 'POLYGON_ID': '13167-7', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:30, 298, MAIN LOGGER, INFO, page number 47 done successfully
-18:40:30, 309, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:30, 950, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 9942
-18:40:30, 962, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '20.09.2018', 'DEALDATETIME': '2018-09-20T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '13397-29-21', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '83', 'DEALAMOUNT': '783,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': None, 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '7910733885', 'TYPE': 2, 'POLYGON_ID': '13397-29', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:30, 962, MAIN LOGGER, INFO, page number 48 done successfully
-18:40:30, 967, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:31, 510, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10174
-18:40:31, 519, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '05.09.2018', 'DEALDATETIME': '2018-09-05T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '13397-29-1', 'DEALNATUREDESCRIPTION': '����', 'ASSETROOMNUM': '3', 'FLOORNO': None, 'DEALNATURE': '83', 'DEALAMOUNT': '863,600', 'NEWPROJECTTEXT': '1', 'PROJECTNAME': '��� ����� �', 'BUILDINGYEAR': None, 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '10983447237', 'TYPE': 2, 'POLYGON_ID': '13397-29', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:31, 519, MAIN LOGGER, INFO, page number 49 done successfully
-18:40:31, 521, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:32, 196, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10147
-18:40:32, 208, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '22.08.2018', 'DEALDATETIME': '2018-08-22T00:00:00', 'FULLADRESS': '���� 20, ����� �����', 'DISPLAYADRESS': '���� 20', 'GUSH': '13167-29-11', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '����', 'DEALNATURE': '60.20', 'DEALAMOUNT': '146,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '5', 'KEYVALUE': '7910492819', 'TYPE': 1, 'POLYGON_ID': '13167-29', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:32, 208, MAIN LOGGER, INFO, page number 50 done successfully
-18:40:32, 211, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:32, 865, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10485
-18:40:32, 873, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '02.08.2018', 'DEALDATETIME': '2018-08-02T00:00:00', 'FULLADRESS': '�� �� 54, ����� �����', 'DISPLAYADRESS': '�� �� 54', 'GUSH': '13105-37-15', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3.5', 'FLOORNO': '����', 'DEALNATURE': '69.70', 'DEALAMOUNT': '475,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '7910418315', 'TYPE': 1, 'POLYGON_ID': '13105-37', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:32, 873, MAIN LOGGER, INFO, page number 51 done successfully
-18:40:32, 875, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:33, 417, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10335
-18:40:33, 430, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '08.07.2018', 'DEALDATETIME': '2018-07-08T00:00:00', 'FULLADRESS': '����� 15, ����� �����', 'DISPLAYADRESS': '����� 15', 'GUSH': '13378-175-3', 'DEALNATUREDESCRIPTION': "����' �� ������", 'ASSETROOMNUM': '5', 'FLOORNO': None, 'DEALNATURE': '153', 'DEALAMOUNT': '1,985,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1990', 'YEARBUILT': '', 'BUILDINGFLOORS': '1', 'KEYVALUE': '7909861679', 'TYPE': 1, 'POLYGON_ID': '13378-175', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:33, 431, MAIN LOGGER, INFO, page number 52 done successfully
-18:40:33, 434, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:33, 976, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10481
-18:40:33, 984, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '14.06.2018', 'DEALDATETIME': '2018-06-14T00:00:00', 'FULLADRESS': '������� 30, ����� �����', 'DISPLAYADRESS': '������� 30', 'GUSH': '13378-276-17', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '3', 'FLOORNO': '������', 'DEALNATURE': '100', 'DEALAMOUNT': '604,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1990', 'YEARBUILT': '', 'BUILDINGFLOORS': '3', 'KEYVALUE': '7909028534', 'TYPE': 1, 'POLYGON_ID': '13378-276', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:33, 985, MAIN LOGGER, INFO, page number 53 done successfully
-18:40:33, 986, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:34, 633, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10433
-18:40:34, 649, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '11.05.2018', 'DEALDATETIME': '2018-05-11T00:00:00', 'FULLADRESS': '�� 14, ����� �����', 'DISPLAYADRESS': '�� 14', 'GUSH': '13109-82-1', 'DEALNATUREDESCRIPTION': "����' �� ������", 'ASSETROOMNUM': '5', 'FLOORNO': None, 'DEALNATURE': '176', 'DEALAMOUNT': '1,700,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1987', 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '7908966090', 'TYPE': 1, 'POLYGON_ID': '13109-82', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:34, 650, MAIN LOGGER, INFO, page number 54 done successfully
-18:40:34, 659, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:35, 197, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10641
-18:40:35, 209, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '13.03.2018', 'DEALDATETIME': '2018-03-13T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '13377-26-1', 'DEALNATUREDESCRIPTION': "����' �� ������", 'ASSETROOMNUM': '5', 'FLOORNO': None, 'DEALNATURE': '177', 'DEALAMOUNT': '1,380,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1997', 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '7907644582', 'TYPE': 2, 'POLYGON_ID': '13377-26', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:35, 210, MAIN LOGGER, INFO, page number 55 done successfully
-18:40:35, 212, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:35, 880, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10268
-18:40:35, 893, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '17.01.2018', 'DEALDATETIME': '2018-01-17T00:00:00', 'FULLADRESS': '', 'DISPLAYADRESS': '', 'GUSH': '14084-11-31', 'DEALNATUREDESCRIPTION': '���� ���� �����', 'ASSETROOMNUM': '4', 'FLOORNO': '������', 'DEALNATURE': '95', 'DEALAMOUNT': '885,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': None, 'YEARBUILT': '', 'BUILDINGFLOORS': None, 'KEYVALUE': '7906421229', 'TYPE': 2, 'POLYGON_ID': '14084-11', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:35, 893, MAIN LOGGER, INFO, page number 56 done successfully
-18:40:35, 896, urllib3.connectionpool, DEBUG, Starting new HTTPS connection (1): www.nadlan.gov.il:443
-18:40:36, 529, urllib3.connectionpool, DEBUG, https://www.nadlan.gov.il:443 "POST /Nadlan.REST/Main/GetAssestAndDeals HTTP/1.1" 200 10478
-18:40:36, 541, MAIN LOGGER, INFO, first apartment in list is : {'DEALDATE': '07.12.2017', 'DEALDATETIME': '2017-12-07T00:00:00', 'FULLADRESS': '�� �� 90, ����� �����', 'DISPLAYADRESS': '�� �� 90', 'GUSH': '13145-99-1', 'DEALNATUREDESCRIPTION': '����', 'ASSETROOMNUM': '', 'FLOORNO': '����', 'DEALNATURE': '21.24', 'DEALAMOUNT': '150,000', 'NEWPROJECTTEXT': '', 'PROJECTNAME': None, 'BUILDINGYEAR': '1970', 'YEARBUILT': '', 'BUILDINGFLOORS': '4', 'KEYVALUE': '7906091187', 'TYPE': 1, 'POLYGON_ID': '13145-99', 'TREND_IS_NEGATIVE': False, 'TREND_FORMAT': ''}
-18:40:36, 541, MAIN LOGGER, INFO, page number 57 done successfully
+16:58:35, 143, root, INFO, ###############################
+16:58:35, 144, root, INFO, Init16:59:25, 546, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 16:59:25] "[37mGET /fma/users/login/zah@gmail.com HTTP/1.1[0m" 200 -
+16:59:42, 39, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 16:59:42] "[37mGET /fma/users/login/zah@gmail.com HTTP/1.1[0m" 200 -
+16:59:52, 609, __mp_main__, ERROR, Exception on /fma/users/login/tayar [GET]
+Traceback (most recent call last):
+  File "C:\Users\User\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\anaconda3\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\User\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\User\Desktop\Learning\Projects\fma_final_project_2022\src\main\fma\controllers\user_controller.py", line 20, in get_user_details
+    res = service.login(user_email)
+  File "C:\Users\User\Desktop\Learning\Projects\fma_final_project_2022\src\main\fma\logic\user_services.py", line 35, in login
+    entity = user_entity(json['email'],json['role'],json['username'],json['avatar'],json['last_searched'])
+TypeError: 'NoneType' object is not subscriptable
+16:59:52, 630, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 16:59:52] "[35m[1mGET /fma/users/login/tayar HTTP/1.1[0m" 500 -
+17:01:01, 190, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:01:01] "[37mGET /fma/users/login/zah@gmail.com HTTP/1.1[0m" 200 -
+17:01:23, 150, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:01:23] "[37mOPTIONS /fma/users HTTP/1.1[0m" 200 -
+17:01:23, 630, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:01:23] "[37mPOST /fma/users HTTP/1.1[0m" 200 -
+17:01:38, 731, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:01:38] "[37mGET /fma/users/login/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:01:52, 712, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:01:52] "[37mGET /fma/users/login/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:03:53, 49, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:03:53] "[37mGET /fma/users/login/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:04:40, 38, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:04:40] "[37mGET /fma/users/login/zah@gmail.com HTTP/1.1[0m" 200 -
+17:06:42, 824, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:06:42] "[37mGET /fma/users/login/zah@gmail.com HTTP/1.1[0m" 200 -
+17:09:06, 962, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:09:06] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:09:17, 988, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:09:17] "[37mOPTIONS /fma/items/store HTTP/1.1[0m" 200 -
+17:09:18, 461, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:09:18] "[37mPOST /fma/items/store HTTP/1.1[0m" 200 -
+17:09:18, 562, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:09:18] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:09:18, 782, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:09:18] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:09:19, 253, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:09:19] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:09:20, 163, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:09:20] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:09:20, 666, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:09:20] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:10:01, 291, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:10:01] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:10:10, 997, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:10:10] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:10:18, 425, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:10:18] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:10:19, 265, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:10:19] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:10:29, 635, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:10:29] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:10:32, 327, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:10:32] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:10:37, 424, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:10:37] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:11:11, 36, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:11:11] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:11:18, 533, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:11:18] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:11:24, 54, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:11:24] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:11:35, 509, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:11:35] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:11:50, 65, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:11:50] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:11:59, 832, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:11:59] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:12:03, 329, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:03] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:12:03, 643, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:03] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:12:04, 108, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:04] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:12:04, 111, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:04] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:12:23, 813, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:23] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:12:23, 814, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:23] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:12:24, 538, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:24] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:12:24, 584, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:24] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:12:53, 777, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:53] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:12:54, 93, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:54] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:12:55, 331, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:12:55, 807, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:12:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:13:04, 801, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:13:04] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:13:04, 802, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:13:04] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:13:06, 355, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:13:06] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:13:06, 479, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:13:06] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:13:17, 896, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:13:17] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:13:18, 201, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:13:18] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:13:19, 126, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:13:19] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:13:19, 263, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:13:19] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:28:20, 101, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:28:20] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:28:28, 189, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:28:28] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:28:29, 799, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:28:29] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:28:33, 296, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:28:33] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:28:36, 560, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:28:36] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:28:39, 508, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:28:39] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:29:08, 732, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:29:08] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:29:15, 372, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:29:15] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:29:45, 249, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:29:45] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:29:46, 560, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:29:46] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:29:46, 879, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:29:46] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:29:47, 342, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:29:47] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:29:47, 673, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:29:47] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:30:11, 427, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:30:11] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:30:11, 428, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:30:11] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:30:12, 154, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:30:12] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:30:12, 195, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:30:12] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:31:05, 914, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:31:05] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:31:12, 228, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:31:12] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:31:33, 919, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:31:33] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:31:39, 229, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:31:39] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:31:41, 925, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:31:41] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:32:01, 230, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:32:01] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:32:18, 925, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:32:18] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:32:32, 253, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:32:32] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:32:36, 348, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:32:36] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:32:47, 956, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:32:47] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:32:47, 957, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:32:47] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:32:48, 655, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:32:48] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:32:48, 729, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:32:48] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:33:16, 580, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:33:16] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:33:22, 507, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:33:22] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:33:24, 245, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:33:24] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:33:24, 549, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:33:24] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:33:25, 23, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:33:25] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:33:25, 317, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:33:25] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:33:26, 976, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:33:26] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:33:26, 984, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:33:26] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:41:27, 318, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:41:27] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:42:39, 62, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:42:39] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:42:42, 511, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:42:42] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:43:01, 920, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:43:01] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:44:56, 479, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:44:56] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:45:14, 925, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:45:14] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:45:45, 436, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:45:45] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:45:46, 445, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:45:46] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:45:46, 762, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:45:46] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:45:47, 233, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:45:47] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:45:47, 551, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:45:47] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:46:03, 883, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:46:03] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:46:03, 886, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:46:03] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:46:04, 597, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:46:04] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:46:04, 671, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:46:04] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:46:08, 831, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:46:08] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:46:09, 138, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:46:09] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:48:18, 873, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:48:18] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:48:32, 507, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:48:32] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:49:08, 871, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:49:08] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:49:08, 873, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:49:08] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:49:10, 431, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:49:10] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:49:10, 501, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:49:10] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:49:43, 78, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:49:43] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:50:12, 871, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:50:12] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:50:13, 171, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:50:13] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:51:05, 694, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:51:05] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:51:05, 962, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:51:05] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:51:06, 161, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:51:06] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:51:07, 896, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:51:07] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:51:08, 200, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:51:08] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:51:08, 656, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:51:08] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:51:08, 983, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:51:08] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:53:57, 790, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:53:57] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:54:22, 355, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:54:22] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:54:23, 870, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:54:23] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:54:43, 928, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:54:43] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:54:52, 249, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:54:52] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:54:54, 574, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:54:54] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:54:54, 883, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:54:54] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:54:55, 354, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:54:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:54:55, 657, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:54:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:55:16, 488, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:16] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:55:18, 634, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:18] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:55:18, 941, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:18] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:55:19, 866, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:19] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:55:20, 505, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:20] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:55:22, 572, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:22] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:55:22, 589, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:22] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:55:27, 961, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:27] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:55:29, 694, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:29] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:55:31, 782, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:55:31] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:56:06, 363, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:06] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:56:06, 625, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:06] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:56:06, 833, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:06] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:56:09, 66, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:09] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:56:10, 500, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:10] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:56:10, 501, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:10] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:56:11, 208, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:11] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:56:11, 265, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:11] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:56:58, 971, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:56:58] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:57:00, 882, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:00] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:57:00, 883, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:00] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:57:01, 605, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:01] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:57:01, 657, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:01] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:57:05, 645, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:05] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:57:05, 945, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:05] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:57:11, 547, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:11] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:57:11, 548, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:11] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+17:57:12, 266, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:12] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:57:12, 319, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:12] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+17:57:18, 26, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:57:18] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:58:42, 236, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:58:42] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:59:01, 970, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:59:01] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:59:05, 259, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:59:05] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:59:14, 936, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:59:14] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+17:59:30, 257, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 17:59:30] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:06:06, 409, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:06:06] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:06:31, 161, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:06:31] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:06:35, 238, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:06:35] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:08:21, 329, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:08:21] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:08:25, 744, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:08:25] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:08:57, 673, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:08:57] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:09:38, 188, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:38] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:09:38, 501, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:38] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:09:38, 970, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:38] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:39, 269, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:39] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:45, 806, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:45] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:09:45, 807, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:45] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:09:46, 527, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:46] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:46, 591, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:46] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:48, 610, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:48] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:48, 918, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:48] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:51, 144, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:51] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:51, 458, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:51] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:53, 980, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:53] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:09:54, 290, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:54] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:09:54, 752, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:54] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:09:55, 64, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:09:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:10:03, 441, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:03] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:10:03, 443, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:03] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:10:04, 944, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:04] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:10:05, 150, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:05] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:10:08, 776, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:08] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:10:09, 89, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:09] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:10:20, 606, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:20] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:10:20, 607, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:20] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:10:22, 112, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:22] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:10:22, 337, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:22] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:10:54, 683, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:10:54] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:11:17, 270, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:11:17] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:11:18, 599, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:11:18] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:11:20, 741, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:11:20] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:11:22, 329, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:11:22] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:11:43, 734, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:11:43] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:11:46, 791, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:11:46] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:11:56, 287, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:11:56] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:12:03, 424, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:12:03] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:12:04, 827, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:12:04] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:12:54, 365, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:12:54] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:12:58, 418, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:12:58] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:14:13, 219, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:14:13] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:14:15, 918, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:14:15] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:14:51, 242, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:14:51] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:14:51, 944, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:14:51] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:16:00, 279, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:16:00] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:16:01, 542, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:16:01] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:16:01, 858, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:16:01] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:16:02, 318, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:16:02] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:16:02, 621, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:16:02] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:17:11, 220, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:17:11] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:17:19, 955, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:17:19] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:17:38, 251, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:17:38] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:17:40, 929, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:17:40] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:18:01, 227, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:18:01] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:18:02, 965, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:18:02] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:18:20, 231, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:18:20] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:18:20, 983, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:18:20] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:19:02, 225, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:19:02] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:19:11, 929, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:19:11] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:19:28, 243, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:19:28] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:20:07, 948, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:20:07] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:20:52, 881, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:20:52] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:21:06, 874, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:21:06] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:21:41, 173, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:21:41] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:21:44, 72, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:21:44] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:22:58, 896, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:22:58] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:24:13, 988, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:24:13] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:24:27, 21, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:24:27] "[37mOPTIONS /fma/items/store HTTP/1.1[0m" 200 -
+18:24:27, 490, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:24:27] "[37mPOST /fma/items/store HTTP/1.1[0m" 200 -
+18:24:27, 601, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:24:27] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:24:27, 819, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:24:27] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:24:28, 289, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:24:28] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:24:28, 386, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:24:28] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:24:31, 257, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:24:31] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:25:07, 639, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:07] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:25:16, 843, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:16] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:25:48, 673, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:48] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:25:48, 674, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:48] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:25:49, 401, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:49] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:25:49, 438, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:49] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:25:54, 131, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:54] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:25:54, 447, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:54] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:25:55, 558, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:25:56, 202, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:25:56] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:26:00, 626, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:26:00] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:26:00, 628, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:26:00] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:26:01, 336, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:26:01] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:26:01, 390, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:26:01] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:26:39, 985, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:26:39] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:27:12, 967, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:12] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:27:13, 217, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:13] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:27:15, 475, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:15] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:27:42, 754, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:42] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:27:44, 429, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:44] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:27:44, 740, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:44] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:27:45, 194, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:45] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:27:45, 515, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:45] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:27:48, 652, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:48] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:27:48, 667, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:48] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:27:49, 905, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:49] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:27:50, 216, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:50] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:27:50, 681, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:50] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:27:51, 0, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:51] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:27:52, 815, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:52] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:27:52, 821, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:27:52] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:28:05, 415, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:28:05] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:28:05, 722, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:28:05] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:28:06, 672, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:28:06] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:28:07, 288, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:28:07] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:28:19, 151, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:28:19] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:28:19, 152, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:28:19] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:28:20, 414, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:28:20] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:28:20, 644, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:28:20] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:29:01, 510, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:01] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:29:03, 631, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:03] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:29:03, 632, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:03] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:29:04, 333, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:04] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:29:04, 399, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:04] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:29:07, 693, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:07] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:29:08, 291, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:08] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:29:24, 401, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:24] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:29:33, 301, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:33] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:29:46, 451, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:46] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:29:59, 398, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:29:59] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:30:00, 462, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:30:00] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:30:09, 353, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:30:09] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:30:26, 830, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:30:26] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:30:51, 310, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:30:51] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:31:11, 953, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:31:11] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:32:18, 546, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:32:18] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:32:31, 169, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:32:31] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:32:36, 352, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:32:36] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:32:59, 539, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:32:59] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:33:01, 625, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:33:01] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:33:01, 626, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:33:01] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:33:02, 341, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:33:02] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:33:02, 396, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:33:02] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:24, 516, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:24] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:34:34, 629, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:34] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:34:36, 738, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:36] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:34:36, 739, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:36] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:34:37, 458, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:37] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:37, 504, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:37] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:37, 916, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:37] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:38, 238, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:38] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:39, 228, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:39] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:39, 239, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:39] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:51, 804, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:51] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:34:52, 112, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:52] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:34:52, 580, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:52] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:52, 887, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:52] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:53, 530, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:53] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:53, 539, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:53] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:54, 402, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:54] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:54, 404, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:54] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:55, 189, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:55, 730, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:56, 16, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:56] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:56, 18, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:56] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:56, 678, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:56] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:56, 684, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:56] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:58, 157, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:58] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:34:58, 160, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:58] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:34:58, 886, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:58] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:58, 940, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:58] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:59, 417, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:59] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:34:59, 739, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:34:59] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:35:00, 481, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:00] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:35:00, 487, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:00] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:35:31, 482, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:31] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:35:33, 941, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:33] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:35:36, 161, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:36] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:35:36, 161, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:36] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:35:36, 873, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:36] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:35:36, 927, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:36] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:35:37, 556, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:37] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:35:37, 875, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:37] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:35:57, 53, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:57] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:35:57, 56, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:57] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:35:57, 764, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:57] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:35:57, 833, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:35:57] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:00, 560, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:00] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:01, 30, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:01] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:28, 356, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:28] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:36:31, 603, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:31] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:36:31, 922, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:31] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:36:32, 380, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:32] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:32, 687, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:32] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:34, 407, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:34] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:34, 414, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:34] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:37, 402, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:37] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:36:37, 707, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:37] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:36:38, 647, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:38] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:39, 232, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:39] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:44, 877, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:44] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:36:44, 878, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:44] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:36:45, 595, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:45] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:45, 649, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:45] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:53, 929, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:53] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:36:54, 244, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:54] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:36:54, 703, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:54] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:55, 10, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:55] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:57, 438, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:57] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:36:57, 752, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:36:57] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:10, 574, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:10] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:37:12, 514, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:12] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:37:12, 515, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:12] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:37:13, 239, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:13] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:13, 276, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:13] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:15, 115, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:15] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:15, 436, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:15] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:18, 92, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:18] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:18, 96, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:18] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:20, 484, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:20] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:37:20, 800, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:20] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:37:21, 281, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:21] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:21, 572, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:21] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:22, 262, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:22] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:22, 271, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:22] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:23, 934, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:23] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:37:24, 221, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:37:24] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:38:04, 805, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:04] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:38:13, 58, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:13] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
+18:38:14, 399, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:14] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:38:14, 704, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:14] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:38:15, 160, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:15] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:38:15, 471, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:15] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:38:17, 961, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:17] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:38:18, 282, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:18] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:38:20, 998, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:20] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:38:21, 319, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:21] "[37mOPTIONS /fma/operations HTTP/1.1[0m" 200 -
+18:38:21, 785, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:21] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:38:22, 101, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:22] "[37mPOST /fma/operations HTTP/1.1[0m" 200 -
+18:38:45, 392, werkzeug, INFO, 127.0.0.1 - - [25/Apr/2022 18:38:45] "[37mGET /fma/items/by_user/lidar602@gmail.com HTTP/1.1[0m" 200 -
