@@ -13,23 +13,33 @@ class search:
         price = int(search_details['price'])
         num_of_rooms = int(search_details['num_of_rooms'])
         location = search_details['location']
+        city = location['city']
+        if city == 'קרית שמונה':
+            city = 'קריית שמונה'
         street = location['street']
         square_meter = search_details['square_meter']
-        apartment_data = list(nadlan_gov_db.find({
-            '$and': [
-                {'price_sold_asset': {
-                    '$lt': price
-                }},
-                {'asset_room_numbers': {
-                    '$lt': num_of_rooms
-                }},
+        query = [
+            {'price_sold_asset': {
+                '$lt': price
+            }},
+            {'asset_room_numbers': {
+                '$lt': num_of_rooms
+            }},
+            {'city': {
+                '$regex': city
+            }},
+            {'asset_size_in_meters': {
+                '$lt': square_meter
+            }}
+        ]
+        if street != '':
+            query.append(
                 {'street_and_number': {
                     '$regex': street
-                }},
-                {'asset_size_in_meters': {
-                    '$lt': square_meter
                 }}
-            ]}
+            )
+        apartment_data = list(nadlan_gov_db.find({
+            '$and': query}
         ).sort("price_sold_asset", 1))
         apartment_data = apartment_data[0:3]
         if apartment_data:
@@ -46,20 +56,21 @@ class search:
         street = location['street']
         city = location['city']
         square_meter = search_details['square_meter']
+        query = [
+            {'price': {
+                '$lt': price
+            }},
+            {'num_of_rooms': {
+                '$lt': num_of_rooms
+            }},
+            {'city': city},
+            {'square_meter': {
+                '$lt': square_meter
+            }}]
+        if street != '':
+            query.append({
+                'street': {'$regex': street}
+            })
         ls = list(yad_2_db.find({
-            '$and': [
-                {'price': {
-                    '$lt': price
-                }},
-                {'num_of_rooms': {
-                    '$lt': num_of_rooms
-                }},
-                {'street': {'$regex': street}},
-                {'city': city},
-                {'square_meter': {
-                    '$lt': square_meter
-                }}]}).sort("price", 1))
+            '$and': query}).sort("price", 1))
         return ls
-
-
-

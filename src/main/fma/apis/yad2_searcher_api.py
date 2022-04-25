@@ -3,6 +3,7 @@ import requests
 import re
 from src.main.fma.controllers import yad_2_db
 from selenium import webdriver
+import random
 
 URL = "http://gw.yad2.co.il/feed-search-legacy/realestate/forsale?topArea=25&area=96&city=2800&forceLdLoad=true"
 URL_PAGE = "https://gw.yad2.co.il/feed-search-legacy/realestate/forsale?page="
@@ -110,10 +111,10 @@ class yad2_searcher_api:
         # rv = requests.get('https://mhaifafc.com/')
         # r = requests.get(url, headers=headers, cookies=rv.cookies)
         # self.driver.get(url)
-        return '054-3246673'
-
-
+        return '05' + str(random.randint(0, 4)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(
+            random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(
+            random.randint(0, 9)) + str(random.randint(0, 9))
 
 # yad2_searcher_api = yad2_searcher_api()
 # yad2_searcher_api.search_apartments()
-#https://www.yad2.co.il/api/item/c48e2fb4/contactinfo?id=c48e2fb4
+# https://www.yad2.co.il/api/item/c48e2fb4/contactinfo?id=c48e2fb4
