@@ -1,11 +1,12 @@
 class user_entity:
 
-    def __init__(self, email="", role="", username="", avatar="", user_id="", last_searched=[]):
+    def __init__(self, email="", role="", username="", avatar="", user_id="", password = "", last_searched=[]):
         self.email = email
         self.role = role
         self.username = username
         self.avatar = avatar
         self.user_id = user_id
+        self.password = password
         self.last_searched = last_searched
 
 
@@ -38,3 +39,9 @@ class user_entity:
 
     def set_email(self, email):
         self.email=email
+
+    def get_password(self):
+        return self.password
+
+    def set_password(self,password):
+        self.password = password

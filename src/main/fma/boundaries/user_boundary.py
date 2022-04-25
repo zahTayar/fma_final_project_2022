@@ -1,9 +1,10 @@
 class user_boundary():
-    def __init__(self, email="", username="", avatar="", role=""):
+    def __init__(self, email="", username="", avatar="", role="",passowrd=""):
         self.email = email
         self.username = username
         self.avatar = avatar
         self.role = role
+        self.password = passowrd
 
     def get_email(self):
         return self.email
@@ -28,3 +29,9 @@ class user_boundary():
 
     def set_avatar(self, avatar):
         self.avatar = avatar
+
+    def get_password(self):
+        return self.password
+
+    def set_password(self,password):
+        self.password = password
