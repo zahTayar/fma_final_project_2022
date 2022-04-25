@@ -1,4 +1,5 @@
 import json
+import logging
 
 import flask
 from flask import Blueprint, render_template, session, abort, request
@@ -11,6 +12,12 @@ from src.main.fma.helpers.checker_authorization import checker_authorization
 app_file4 = Blueprint('app_file4', __name__)
 
 
+log = logging.getLogger("MAIN LOGGER")
+logging.basicConfig(filename="../fma/logs/user_controller.md", filemode='w',
+                    format='%(asctime)s, %(msecs)d, %(name)s, %(levelname)s, %(message)s',
+                    datefmt='%H:%M:%S',
+                    level=logging.DEBUG)
+
 @app_file4.route('/fma/users/login/<user_email>', methods=["GET"])
 def get_user_details(user_email) -> json:
     dic = {
@@ -20,6 +27,7 @@ def get_user_details(user_email) -> json:
     res = service.login(user_email)
     d = flask.jsonify(res)
     d.headers.add('Access-Control-Allow-Origin', '*')
+    log.info("login successed for: " + user_email)
     return d
 
 
@@ -27,12 +35,15 @@ def get_user_details(user_email) -> json:
 def create_new_user() -> json:
     # search if there is user with the same email
     service = user_service()
-    user = new_user_details(request.get_json()["email"],
+    user = user_boundary(request.get_json()["email"],
                             request.get_json()["username"],
                             request.get_json()["avatar"],
                             request.get_json()["role"],
                             request.get_json()["password"])
-    return  service.create_user(user)
+    res = service.create_user(user)
+    d = flask.jsonify(res)
+    log.info(d.data)
+    return  d
 
 
 

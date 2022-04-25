@@ -20,19 +20,23 @@ class user_service:
         # check if user name is null
         if not self.checker.check_user_name_valid(user_details.get_username()):
             raise RuntimeError("Username is not valid")
-        user_bou = user_boundary(user_details.get_email(),
-                                 user_details.get_username(),
-                                 user_details.get_avatar(),
-                                 user_details.get_role())
-        new_user = self.convert_to_entity(user_bou)
-        new_user.set_user_id(user_bou.get_email())
+
+        #check for pass
+        # user_bou = user_boundary(user_details.get_email(),
+        #                          user_details.get_username(),
+        #                          user_details.get_avatar(),
+        #                          user_details.get_role(),
+        #                          user_details.get_pass)
+        new_user = self.convert_to_entity(user_details)
+        new_user.set_user_id(user_details.get_email())
         users_db.insert_one(new_user.__dict__)
         return self.convert_to_boundary(new_user).__dict__
 
     def login(self, user_email):
         query = {"user_id": user_email}
         json = users_db.find_one(query)
-        entity = user_entity(json['email'],json['role'],json['username'],json['avatar'],json['last_searched'])
+
+        entity = user_entity(json['email'],json['role'],json['username'],json['avatar'],json['email'], json['password'], json['last_searched'])
         if not entity:
             raise RuntimeError("Email not found/exist")
         return self.convert_to_boundary(entity).__dict__
@@ -79,6 +83,7 @@ class user_service:
         user.set_username(user_bou.get_username())
         user.set_user_id(user_bou.get_email())
         user.set_email(user_bou.get_email())
+        user.set_password(user_bou.get_password())
         return user
 
     def convert_to_boundary(self, user_ent):
@@ -87,4 +92,5 @@ class user_service:
         user.set_role(user_ent.get_role())
         user.set_username(user_ent.get_username())
         user.set_email(user_ent.get_email())
+        user.set_password(user_ent.get_password())
         return user
