@@ -18,8 +18,8 @@ class checker_authorization:
 
     def check_valid_user(self, id_string):
         query = {"user_id": id_string}
-        entity = users_db.find(query)
-        if not entity:
+        entity = users_db.find_one(query)
+        if entity:
             return False
         return True
 

@@ -7,10 +7,10 @@ from src.main.fma.apis.worker import worker
 from time import sleep
 from datetime import datetime
 from multiprocessing import Process
-# from flask_cors import CORS
+from flask_cors import CORS
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 app.register_blueprint(app_file1)
 app.register_blueprint(app_file2)
 app.register_blueprint(app_file3)
@@ -18,7 +18,7 @@ app.register_blueprint(app_file4)
 
 
 def exec_worker():
-    worker_min = 240
+    worker_min = 1000
     w = worker()
     while True:
         sleep(60 * worker_min)
