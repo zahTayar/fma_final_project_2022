@@ -18,7 +18,7 @@ app.register_blueprint(app_file4)
 
 
 def exec_worker():
-    worker_min = 1000
+    worker_min = 120
     w = worker()
     while True:
         sleep(60 * worker_min)

@@ -30,7 +30,4 @@ def store_item() -> json:
 @app_file2.route('/fma/items/<item_id>', methods=["PUT"])
 def update_item(item_id) -> json:
     rv = request.get_json()
-    item = item_boundary(
-        '', '', rv['address'], rv['active'], '', rv['item_attributes'], ''
-    )
-    return item_service.update_item(item_id, item)
+    return item_service.update_item(item_id, rv['active'])

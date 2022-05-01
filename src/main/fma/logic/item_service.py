@@ -55,18 +55,17 @@ class item_service:
         entity.set_created_by(boundary.get_created_by())
         return entity
 
-    def update_item(self, item_id, boundary):
+    def update_item(self, item_id, active):
         my_query = {"item_id": item_id}
         nv = dict()
-        nv['address'] = boundary.get_address()
-        nv['active'] = boundary.get_active()
-        nv['item_attributes'] = boundary.get_item_attributes()
+        nv['active'] = active
         new_values = {"$set": nv}
+        rv = {}
         try:
-            items_db.update_one(my_query, new_values)
+            rv = items_db.update_one(my_query, new_values)
         except mongodb_errors:
             print(str(mongodb_errors))
-        return boundary.__dict__
+        return my_query
 
     def delete_all_items(self, user_email):
         # check auth of user_email
@@ -84,7 +83,11 @@ class item_service:
         items = []
         entities = []
         try:
-            entities = items_db.find({"created_by": user_email})
+            query = [
+                {"created_by": user_email},
+                {"active": True}
+            ]
+            entities = list(items_db.find({'$and': query}))
         except mongodb_errors:
             print(str(mongodb_errors))
         for rv in entities:
