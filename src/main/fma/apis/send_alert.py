@@ -10,7 +10,7 @@ class send_alert:
         self.email_address = 'fma.finalproject2022@yahoo.com'
         self.subject = 'Subject: We Found New Apartments For You!\n\n'
         self.passcode = 'zkykgdjwieuikyrf'
-        self.content = 'Hello, \nWe are glad to tell you that after a long long search we found some apartments that can interest you.\nPlease click the link: \n{url}\n\n.'
+        self.content = 'Hello, \nWe are glad to tell you that after a long long search we found some apartments that can interest you.\nPlease click the link: \nhttp://localhost:3000/history\n\n.'
         self.footer = "Thank you."
 
     def find_all_users_id(self):

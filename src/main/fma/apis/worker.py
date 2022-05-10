@@ -15,10 +15,12 @@ class worker:
         self.yad2_searcher_api.search_apartments()
         apartments_data = self.searcher_nadlan.search_all_town()
         # # remove
-        db.apartments.remove({})
         db.apartments_data.remove({})
         # # import new data
         self.searcher_nadlan.data_manager(apartments_data)
+        # # remove
+        db.apartments.remove({})
+        # # import new data
         self.yad2_searcher_api.data_manager()
         # send alerts to users
         self.s.send_email_with_update()
