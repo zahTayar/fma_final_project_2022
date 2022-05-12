@@ -4,6 +4,7 @@ from src.main.fma.helpers.checker_authorization import checker_authorization
 from src.main.fma.logic.operations.search import search
 from src.main.fma.logic.operations.calculate_increase_in_value import calculate_incrase_in_value
 from src.main.fma.data.operation_entity import operation_entity
+from src.main.fma.logic.operations.get_streets_by_city import get_streets_by_city
 import pymongo.errors as mongodb_errors
 from datetime import datetime
 import uuid
@@ -19,6 +20,7 @@ class operations_service:
         self.search = search()
         self.calculate_increase_in_value = calculate_incrase_in_value()
         self.checker_authorization = checker_authorization()
+        self.get_streets_by_city = get_streets_by_city()
 
     def invoke_operation(self, boundary):
         entity = self.convert_boundary_to_entity(boundary)
@@ -35,6 +37,12 @@ class operations_service:
                 result[str(lst.index(apa))] = js
             print(result)
             return result
+
+        if boundary.get_type() == 'streets_by_city_apartments':
+            lst = self.get_streets_by_city.get_streets_by_city_of_apartments(boundary.get_operation_attributes()["city"])
+            if not lst:
+                return {}
+            return {'0': lst}
 
         if boundary.get_type() == 'search_apartments_data':
             lst = self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"])
