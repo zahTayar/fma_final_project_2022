@@ -44,6 +44,12 @@ class operations_service:
                 return {}
             return {'0': lst}
 
+        if boundary.get_type() == 'streets_by_city_apartments_data':
+            lst = self.get_streets_by_city.get_streets_by_city_of_apartments_data(boundary.get_operation_attributes()["city"])
+            if not lst:
+                return {}
+            return {'0': lst}
+
         if boundary.get_type() == 'search_apartments_data':
             lst = self.search.search_previous_apartment_data(boundary.get_operation_attributes()["item_id"])
             if not lst:
