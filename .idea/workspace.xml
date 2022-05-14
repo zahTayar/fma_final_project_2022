@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6e0c98f-d3c5-471a-8408-fc70376e67ba" name="Default Changelist" comment="open new project with RestAPI flask framework">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/User.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fma_final_project_2022.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fma_final_project_2022.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fma/logs/yad2_log.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fma/logs/yad2_log.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.application">
+    <configuration name="application" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fma_final_project_2022" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/fma" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/fma/application.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nadlangov" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fma_final_project_2022" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/fma/apis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/fma/apis/nadlangov.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="send_alert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fma_final_project_2022" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/fma/apis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/fma/apis/send_alert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yad2_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fma_final_project_2022" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/fma/apis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/fma/apis/yad2_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yad2_searcher_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fma_final_project_2022" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/fma/apis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/fma/apis/yad2_searcher_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.application" />
+        <item itemvalue="Python.yad2_searcher_api" />
+        <item itemvalue="Python.send_alert" />
+        <item itemvalue="Python.yad2_api" />
+        <item itemvalue="Python.nadlangov" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL‎00001" summary="open new project with RestAPI flask framework">
+      <created>1646757394143</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1646757394143</updated>
+    </task>
+    <task id="LOCAL‎00002" summary="open new project with RestAPI flask framework">
+      <created>1646757694650</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1646757694650</updated>
+    </task>
+    <task id="LOCAL‎00003" summary="open new project with RestAPI flask framework">
+      <created>1646757839498</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1646757839498</updated>
+    </task>
+    <task id="LOCAL‎00004" summary="open new project with RestAPI flask framework">
+      <created>1647359386268</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1647359386268</updated>
+    </task>
+    <task id="LOCAL‎00005" summary="open new project with RestAPI flask framework">
+      <created>1647364061359</created>
+      <option name="number" value="LOCAL‎00005" />
+      <option name="presentableId" value="LOCAL‎00005" />
+      <updated>1647364061359</updated>
+    </task>
+    <task id="LOCAL‎00006" summary="open new project with RestAPI flask framework">
+      <created>1648208603234</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1648208603234</updated>
+    </task>
+    <task id="LOCAL‎00007" summary="open new project with RestAPI flask framework">
+      <created>1648293239144</created>
+      <option name="number" value="LOCAL‎00007" />
+      <option name="presentableId" value="LOCAL‎00007" />
+      <updated>1648293239144</updated>
+    </task>
+    <task id="LOCAL‎00008" summary="open new project with RestAPI flask framework">
+      <created>1649168981502</created>
+      <option name="number" value="LOCAL‎00008" />
+      <option name="presentableId" value="LOCAL‎00008" />
+      <updated>1649168981502</updated>
+    </task>
+    <task id="LOCAL‎00009" summary="open new project with RestAPI flask framework">
+      <created>1650186029001</created>
+      <option name="number" value="LOCAL‎00009" />
+      <option name="presentableId" value="LOCAL‎00009" />
+      <updated>1650186029001</updated>
+    </task>
+    <task id="LOCAL‎00010" summary="open new project with RestAPI flask framework">
+      <created>1650622254091</created>
+      <option name="number" value="LOCAL‎00010" />
+      <option name="presentableId" value="LOCAL‎00010" />
+      <updated>1650622254091</updated>
+    </task>
+    <task id="LOCAL‎00011" summary="open new project with RestAPI flask framework">
+      <created>1650622743672</created>
+      <option name="number" value="LOCAL‎00011" />
+      <option name="presentableId" value="LOCAL‎00011" />
+      <updated>1650622743672</updated>
+    </task>
+    <task id="LOCAL‎00012" summary="open new project with RestAPI flask framework">
+      <created>1650901179765</created>
+      <option name="number" value="LOCAL‎00012" />
+      <option name="presentableId" value="LOCAL‎00012" />
+      <updated>1650901179765</updated>
+    </task>
+    <task id="LOCAL‎00013" summary="open new project with RestAPI flask framework">
+      <created>1651417510463</created>
+      <option name="number" value="LOCAL‎00013" />
+      <option name="presentableId" value="LOCAL‎00013" />
+      <updated>1651417510463</updated>
+    </task>
+    <task id="LOCAL‎00014" summary="open new project with RestAPI flask framework">
+      <created>1652193834629</created>
+      <option name="number" value="LOCAL‎00014" />
+      <option name="presentableId" value="LOCAL‎00014" />
+      <updated>1652193834629</updated>
+    </task>
+    <task id="LOCAL‎00015" summary="open new project with RestAPI flask framework">
+      <created>1652374957337</created>
+      <option name="number" value="LOCAL‎00015" />
+      <option name="presentableId" value="LOCAL‎00015" />
+      <updated>1652374957337</updated>
+    </task>
+    <task id="LOCAL‎00016" summary="autocomplete">
+      <created>1652438167364</created>
+      <option name="number" value="LOCAL‎00016" />
+      <option name="presentableId" value="LOCAL‎00016" />
+      <updated>1652438167364</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="open new project with RestAPI flask framework" />
+    <MESSAGE value="autocomplete" />
+    <option name="LAST_COMMIT_MESSAGE" value="autocomplete" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="357" y="136" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652539566601">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="357" y="136" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652539566601" />
+    <state x="225" y="0" key="CommitChangelistDialog2" timestamp="1652438166716">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="225" y="0" key="CommitChangelistDialog2/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652438166716" />
+    <state x="225" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1650634547626" />
+    <state x="131" y="43" width="1024" height="572" key="DiffContextDialog" timestamp="1650901294760">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="131" y="43" width="1024" height="572" key="DiffContextDialog/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1650901294760" />
+    <state x="371" y="43" key="FileChooserDialogImpl" timestamp="1650622704999">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="43" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1650622704999" />
+    <state width="1253" height="167" key="GridCell.Tab.0.bottom" timestamp="1652539339291">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1253" height="167" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652539339291" />
+    <state width="1253" height="151" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1536.864@0.0.1280.680" timestamp="1648306026305" />
+    <state width="1253" height="77" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1650920076519" />
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646735611790" />
+    <state width="1253" height="167" key="GridCell.Tab.0.center" timestamp="1652539339291">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1253" height="167" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652539339291" />
+    <state width="1253" height="151" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1536.864@0.0.1280.680" timestamp="1648306026305" />
+    <state width="1253" height="77" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1650920076518" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646735611790" />
+    <state width="1253" height="167" key="GridCell.Tab.0.left" timestamp="1652539339291">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1253" height="167" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652539339291" />
+    <state width="1253" height="151" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1536.864@0.0.1280.680" timestamp="1648306026305" />
+    <state width="1253" height="77" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1650920076518" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646735611789" />
+    <state width="1253" height="167" key="GridCell.Tab.0.right" timestamp="1652539339291">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1253" height="167" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652539339291" />
+    <state width="1253" height="151" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1536.864@0.0.1280.680" timestamp="1648306026305" />
+    <state width="1253" height="77" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1650920076518" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646735611790" />
+    <state width="1253" height="197" key="GridCell.Tab.1.bottom" timestamp="1652435706122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1253" height="197" key="GridCell.Tab.1.bottom/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652435706122" />
+    <state width="1253" height="151" key="GridCell.Tab.1.bottom/0.0.1280.680/0.-1080.1536.864@0.0.1280.680" timestamp="1648306026306" />
+    <state width="1253" height="166" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1647364151776" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646735611790" />
+    <state width="1253" height="197" key="GridCell.Tab.1.center" timestamp="1652435706122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1253" height="197" key="GridCell.Tab.1.center/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652435706122" />
+    <state width="1253" height="151" key="GridCell.Tab.1.center/0.0.1280.680/0.-1080.1536.864@0.0.1280.680" timestamp="1648306026305" />
+    <state width="1253" height="166" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1647364151776" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646735611790" />
+    <state width="1253" height="197" key="GridCell.Tab.1.left" timestamp="1652435706122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1253" height="197" key="GridCell.Tab.1.left/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652435706122" />
+    <state width="1253" height="151" key="GridCell.Tab.1.left/0.0.1280.680/0.-1080.1536.864@0.0.1280.680" timestamp="1648306026305" />
+    <state width="1253" height="166" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1647364151776" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646735611790" />
+    <state width="1253" height="197" key="GridCell.Tab.1.right" timestamp="1652435706122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1253" height="197" key="GridCell.Tab.1.right/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652435706122" />
+    <state width="1253" height="151" key="GridCell.Tab.1.right/0.0.1280.680/0.-1080.1536.864@0.0.1280.680" timestamp="1648306026306" />
+    <state width="1253" height="166" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1647364151776" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646735611790" />
+    <state x="174" y="50" key="MergeDialog" timestamp="1651070680933">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="174" y="50" key="MergeDialog/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1651070680933" />
+    <state x="174" y="50" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1647364086640" />
+    <state x="339" y="0" key="MultipleFileMergeDialog" timestamp="1651070680943">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="339" y="0" key="MultipleFileMergeDialog/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1651070680943" />
+    <state x="339" y="0" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1647364086645" />
+    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1645647276361" />
+    <state x="73" y="0" key="SettingsEditor" timestamp="1651070731390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="73" y="0" key="SettingsEditor/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1651070731390" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646733902846" />
+    <state x="133" y="13" key="Vcs.Push.Dialog.v2" timestamp="1652438174805">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="133" y="13" key="Vcs.Push.Dialog.v2/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652438174805" />
+    <state x="133" y="13" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1650186036671" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1652372309382">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1652372309382" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1645647270621">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1645647270621" />
+    <state x="120" y="20" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1647354219169">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="120" y="20" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1647354219169" />
+    <state x="293" y="104" key="git4idea.merge.GitPullDialog" timestamp="1651070637139">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="293" y="104" key="git4idea.merge.GitPullDialog/0.0.1280.680/0.-1080.1536.824@0.0.1280.680" timestamp="1651070637139" />
+    <state x="293" y="104" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1647364140815" />
+    <state x="219" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1647341008566">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="219" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1647341008566" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/main/fma/controllers/item_controller.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="apartment.get('city')" language="Python" />
+        <watch expression="apartment.get('city')" language="Python" />
+        <watch expression="list(yad_2_db.find({'$and': query}))" language="Python" />
+        <watch expression="list(rv)" language="Python" />
+        <watch expression="list(rv)" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
