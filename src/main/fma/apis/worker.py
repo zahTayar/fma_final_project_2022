@@ -3,6 +3,8 @@ from src.main.fma.apis.nadlangov import nadlangov
 from src.main.fma.controllers import db
 from src.main.fma.apis.send_alert import send_alert
 
+cities = ['בית שאן', 'קרית שמונה']
+
 
 class worker:
     def __init__(self):
@@ -13,11 +15,12 @@ class worker:
     def update_db(self):
         # search for new data
         self.yad2_searcher_api.search_apartments()
-        apartments_data = self.searcher_nadlan.search_all_town()
         # # remove
         db.apartments_data.remove({})
-        # # import new data
-        self.searcher_nadlan.data_manager(apartments_data)
+        for city in cities:
+            apartments_data = self.searcher_nadlan.search_all_town(city)
+            # # import new data
+            self.searcher_nadlan.data_manager(apartments_data)
         # # remove
         db.apartments.remove({})
         # # import new data

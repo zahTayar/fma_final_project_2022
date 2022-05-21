@@ -18,11 +18,10 @@ class nadlangov():
 
     # Get name from user and bring all apartments sold in this town.
     # Can look in log.md to view progress
-    def search_all_town(self):
+    def search_all_town(self, word_from_user):
 
         # first get id town and every data possible
         # word_from_user = input("please enter the name of the tow:\n")
-        word_from_user = "קרית שמונה"
         non_stop = True
         while non_stop:
             try:
